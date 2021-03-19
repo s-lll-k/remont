@@ -1,0 +1,8 @@
+$orng: #FF4713;
+$gray: #BABABA;
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
