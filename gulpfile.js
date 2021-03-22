@@ -189,7 +189,7 @@ export const watch = () => {
 	gulp.watch('src/**/*.html', gulp.series(buildHtml, fixPath));
 	gulp.watch('src/css/**/*.scss', gulp.series(buildCss));
 	gulp.watch('src/fonts/**/*', gulp.series(buildFont));
-	gulp.watch('src/img/**/*', gulp.series(buildImage));
+	gulp.watch('src/images/**/*', gulp.series(buildImage));
 };
 
 // Dev
