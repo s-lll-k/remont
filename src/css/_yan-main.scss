@@ -1,0 +1,58 @@
+//qwe
+.header {
+    &__inner {
+        height: 123px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav {
+        display: flex;
+
+        li {
+            margin-right: 24px;
+        }
+    }
+
+    &__tel {
+        display: block;
+        position: relative;
+        color: #404040;
+        font-weight: 600;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: -28px;
+            background-image: url(../images/stack/sprite.svg#phone);
+            background-size: cover;
+            background-position: center;
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &__btn {
+        color: $blue;
+        position: relative;
+        width: 110px;
+        height: 40px;
+        box-shadow: 0px 8px 24px rgba(12, 75, 134, 0.07);
+        border-radius: 4px;
+        padding-left: 24px;
+        font-size: 16px;
+        line-height: 22px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            background-image: url(../images/stack/sprite.svg#log);
+            background-size: cover;
+            background-position: center;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
