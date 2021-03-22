@@ -33,33 +33,33 @@ export const buildHtml = () => {
 
 // Scripts
 
-export const buildJs = (done) => {
-	gulp.src([
-		'node_modules/jquery/dist/jquery.min.js',
-		'node_modules/jquery-form-styler/dist/jquery.formstyler.min.js',
-		'src/js/vendor/*.js'
-	])
-		.pipe(plumber())
-		.pipe(uglify())
-		.pipe(concat('vendor.min.js'))
-		.pipe(gulp.dest('dist/js'))
-		.pipe(sync.stream());
+// export const buildJs = (done) => {
+// 	gulp.src([
+// 		'node_modules/jquery/dist/jquery.min.js',
+// 		'node_modules/jquery-form-styler/dist/jquery.formstyler.min.js',
+// 		'src/js/vendor/*.js'
+// 	])
+// 		.pipe(plumber())
+// 		.pipe(uglify())
+// 		.pipe(concat('vendor.min.js'))
+// 		.pipe(gulp.dest('dist/js'))
+// 		.pipe(sync.stream());
 
-	gulp.src('src/js/main.js')
-		.pipe(plumber())
-		.pipe(rigger())
-		.pipe(babel({
-			presets: ['@babel/preset-env']
-		}))
-		.pipe(sourcemaps.init())
-		.pipe(uglify())
-		.pipe(sourcemaps.write())
-		.pipe(concat('main.min.js'))
-		.pipe(gulp.dest('dist/js'))
-		.pipe(sync.stream());
+// 	gulp.src('src/js/main.js')
+// 		.pipe(plumber())
+// 		.pipe(rigger())
+// 		.pipe(babel({
+// 			presets: ['@babel/preset-env']
+// 		}))
+// 		.pipe(sourcemaps.init())
+// 		.pipe(uglify())
+// 		.pipe(sourcemaps.write())
+// 		.pipe(concat('main.min.js'))
+// 		.pipe(gulp.dest('dist/js'))
+// 		.pipe(sync.stream());
 
-	done();
-};
+// 	done();
+// };
 
 // Styles
 
@@ -155,7 +155,6 @@ export const fixPath = () => {
 		.pipe(plumber())
 		.pipe(replace('="/', '="'))
 		.pipe(replace('"\\/img', '"img'))
-		.pipe(replace('.js">', '.js?=' + buildVersion + '">'))
 		.pipe(replace('.css">', '.css?=' + buildVersion + '">'))
 		.pipe(gulp.dest('dist'));
 };
@@ -165,7 +164,6 @@ export const fixPath = () => {
 export const buildAll = gulp.series(
 	gulp.parallel(
 		buildHtml,
-		buildJs,
 		buildCss,
 		buildFont,
 		buildImage
@@ -190,7 +188,6 @@ export const server = () => {
 export const watch = () => {
 	gulp.watch('src/**/*.html', gulp.series(buildHtml, fixPath));
 	gulp.watch('src/css/**/*.scss', gulp.series(buildCss));
-	gulp.watch('src/js/**/*.js', gulp.series(buildJs));
 	gulp.watch('src/fonts/**/*', gulp.series(buildFont));
 	gulp.watch('src/img/**/*', gulp.series(buildImage));
 };
