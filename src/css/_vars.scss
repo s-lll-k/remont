@@ -1,8 +1,15 @@
-$orng: #FF4713;
-$gray: #BABABA;
+$gray: #757575;
+$blue: #1374CF;
 
-@mixin flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@mixin M700 {
+    font-family: Montserrat;
+    font-weight: 700;
+}
+@mixin M600 {
+    font-family: Montserrat;
+    font-weight: 700;
+}
+@mixin M400 {
+    font-family: Montserrat;
+    font-weight: 400;
 }
