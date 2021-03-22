@@ -4,4 +4,44 @@
 
 @import "yan-main";
 
+.button{
+    display: block;
+    max-width: max-content;
+    border-radius: 4px;
+    padding: 14px 24px;
+    font-size: 16px;
+    line-height: 22px;
+    &.button1{
+        color: #FFFFFF;
+        background-color: $blue;
+    }
+    &.button2{
+        border: 1px solid rgba(19, 116, 207, 0.5);
+        color: $blue;
+    }
+}
+
+.banners{
+
+}
+
+.slider-arrow{
+    button{
+        width: 50px;
+        height: 40px;
+        background-color: rgba(19, 116, 207, 0.7);
+        position: relative;
+        border-radius: 4px;
+        &._not-active{
+            background-color: rgba(19, 116, 207, 0.5);
+        }
+        svg{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
 // @import "media";
