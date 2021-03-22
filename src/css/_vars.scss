@@ -1,14 +1,17 @@
 $gray: #757575;
 $blue: #1374CF;
+$mgr:#404040;
 
 @mixin M700 {
     font-family: Montserrat;
     font-weight: 700;
 }
+
 @mixin M600 {
     font-family: Montserrat;
     font-weight: 700;
 }
+
 @mixin M400 {
     font-family: Montserrat;
     font-weight: 400;
