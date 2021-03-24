@@ -1,4 +1,13 @@
 //qwe
+// background-image: url(../images/stack/sprite.svg#phone);
+// font-size: 16px;
+// line-height: 22px;
+// margin: 0 auto 100px ;
+// width: 244px;
+// height: 50px;
+// background: $blue;
+// color: #fff;
+// border-radius: 4px;
 .header {
     &__inner {
         height: 123px;
@@ -38,6 +47,7 @@
             background-image: url(../images/stack/sprite.svg#phone);
             background-size: cover;
             background-position: center;
+
             width: 24px;
             height: 24px;
         }
@@ -143,5 +153,304 @@
             text-align: right;
             color: #90B5D9;
         }
+    }
+}
+
+.details {
+    &__inner {}
+
+    &__btn {
+        margin: 0 auto;
+        background: $blue;
+        width: 157px;
+        height: 54px;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-bottom: 96px;
+    }
+
+    &__title {
+        font-size: 40px;
+        line-height: 140%;
+        @include M600;
+    }
+
+    &__subtitle {
+        @include M400;
+        color: $gray;
+        font-size: 24px;
+        opacity: 0.8;
+        line-height: 150%;
+        margin-bottom: 40px;
+    }
+}
+
+.card1-inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -32px;
+    margin-top: -48px;
+
+    .card1 {
+        margin-top: 48px;
+        margin-left: 32px;
+        width: calc(33.33% - 32px);
+
+        &._big {
+            width: calc(50% - 32px);
+
+            .card1__image {
+                height: 440px;
+            }
+        }
+    }
+}
+
+.card1 {
+    &__image {
+        height: 287px;
+        margin-bottom: 16px;
+        overflow: hidden;
+        border-radius: 16px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 8px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 24px;
+        color: #757575;
+        margin-bottom: 8px;
+    }
+
+    &__address {
+        font-size: 14px;
+        line-height: 21px;
+        color: #757575;
+        padding-left: 32px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url(../images/stack/sprite.svg#adress);
+            background-size: cover;
+            background-position: center;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.show {
+    &__title {
+        font-size: 32px;
+        line-height: 100%;
+        color: $mgr;
+        @include M600;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        line-height: 150%;
+        max-width: 100%;
+        color: $gray;
+        width: 838px;
+    }
+
+    &__medium {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+        margin-bottom: 50px;
+    }
+
+    &__slider-title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        color: $blue;
+        margin-right: 24px;
+    }
+
+    &__slider-nav {
+        align-items: center;
+        display: flex;
+        margin-right: -8px;
+    }
+
+    &__slider-btn {
+        margin-right: 8px;
+        width: 50px;
+        height: 40px;
+        background: rgba(19, 116, 207, 0.7);
+        border-radius: 4px;
+
+    }
+
+    .svg-left {
+        transform: rotateZ(180deg)
+    }
+
+    &__bot {
+        display: flex;
+        justify-content: space-between;
+        margin-left: -32px;
+        margin-bottom: 32px;
+
+        &-item {
+            margin-left: 32px;
+            width: 432px;
+            max-width: 100%;
+            min-height: 601px;
+
+        }
+
+        &-cover {
+            position: relative;
+
+            &:hover {
+                .show__bot-loupe {
+
+                    opacity: 1;
+                }
+            }
+        }
+
+        &-loupe {
+            position: absolute;
+            bottom: 23px;
+            display: flex;
+            opacity: 0;
+            transition: 0.3s all;
+            align-items: center;
+            justify-content: center;
+            padding-left: 50px;
+            border-radius: 0px 16px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            width: 139px;
+            height: 60px;
+            background: rgba($color: #1374CF, $alpha: 0.8);
+            color: #fff;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 16px;
+                left: 16px;
+                background-image: url(../images/stack/sprite.svg#3dloupe);
+                background-size: cover;
+                background-position: center;
+                width: 35.37px;
+                height: 26.53px;
+            }
+
+        }
+
+        &-img {
+            width: 431px;
+            max-width: 100%;
+            height: 520px;
+            object-fit: cover;
+            margin-bottom: 16px;
+            border-radius: 16px;
+        }
+
+        &-title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 33px;
+            color: $mgr;
+            margin-bottom: 8px;
+
+        }
+
+        &-subtitles {
+            display: flex;
+            font-size: 14px;
+            line-height: 150%;
+            color: $gray;
+        }
+
+        &-neo {
+            margin-right: 24px;
+            position: relative;
+            margin-left: 32px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -32px;
+                background-image: url(../images/stack/sprite.svg#neo);
+                background-size: cover;
+                background-position: center;
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        &-adress {
+            position: relative;
+            margin-left: 32px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -32px;
+                background-image: url(../images/stack/sprite.svg#adress);
+                background-size: cover;
+                background-position: center;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    &__btn {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 auto 100px;
+        width: 244px;
+        height: 50px;
+        background: $blue;
+        color: #fff;
+        border-radius: 4px;
+    }
+}
+
+.request {
+    margin-bottom: 64px;
+    &__inner {
+        height: 396px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 24px rgba(19, 116, 207, 0.05);
+        border-radius: 16px;
+        position: relative;
+        z-index: 1;
+    }
+    &__bg{
+        position: absolute;
+        right: 0;
+        bottom: 0;
     }
 }
