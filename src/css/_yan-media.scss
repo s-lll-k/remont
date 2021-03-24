@@ -1,0 +1,12 @@
+//1023
+@media(max-width:1230px) {
+    .header {
+        &__nav {
+            li {
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+@media(max-width:1023px) {}
