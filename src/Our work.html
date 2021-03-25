@@ -6,22 +6,9 @@
 <body>
     <div class="block"></div>
     <div class="wrapper">
-        <!--#include virtual="/templates/_headerBorder.html" -->
+        <!--#include virtual="/templates/_header.html" -->
 
         <div class="content">
-
-            <div class="container">
-                <ul class="breadcrumbs">
-                    <li>
-                        <a href="#">
-                            Главная      
-                        </a>
-                    </li>
-                    <li>
-                        Наш ремонт в деталях
-                    </li>
-                </ul>
-            </div>
 
             <section class="details">
                 <div class="container">
@@ -62,48 +49,10 @@
                             <!--#include virtual="/templates/_card1.html" -->
                         </div>
                     </div>
-                    <a class="details__btn button button1">Показать еще</a>
+                    <button class="details__btn">Показать еще</button>
             </section>
-            <section class="slider-box _showroom _our-work-page">
-                <div class="container">
-                    <div class="slider-box__inner">
-                        <h5 class="slider-box__title sm-title">
-                            Наши шоу-румы
-                        </h5>
-                        <div class="slider-box__wrapper">
-                            <p class="slider-box__text">
-                                Запишитесь на визит в один из наших шоурумов, ведь лучше один раз увидеть, чем сто раз услышать! В шоуруме можно  убедиться в качестве наших материалов и ремонтных работ.
-                            </p>
-                            <div class="slider-box__nav">
-                                <a href="#" class="slider-box__link">
-                                    Все шоурумы
-                                </a>
-                                <div class="slider-arrow">
-                                    <button class="_not-active">
-                                        <svg width="11" height="18">
-                                            <use xlink:href="images/stack/sprite.svg#arrow-left-white"></use>
-                                        </svg>
-                                    </button>
-                                    <button>
-                                        <svg width="11" height="18">
-                                            <use xlink:href="images/stack/sprite.svg#arrow-right-white"></use>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-box__slider">
-                            <!--#include virtual="/templates/_card2.html" -->
-                        </div>
-                        <a href="#" class="slider-box__btn button button1">
-                            Записаться на просмотр!
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <div class="container">
-                <!--#include virtual="/templates/_request.html" -->
-            </div>
+        
+            <!--#include virtual="/templates/_request.html" -->
         </div>
         <!--#include virtual="/templates/_footer.html" -->
     </div>
