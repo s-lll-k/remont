@@ -1,2 +1,10 @@
 @import "yan-media";
-@media (min-width: 425px){}
+
+
+
+@media (max-width: 537px){
+    body{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
