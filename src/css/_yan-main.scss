@@ -8,22 +8,52 @@
 // background: $blue;
 // color: #fff;
 // border-radius: 4px;
+.bahandi {
+    margin-right: 40px;
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(12, 75, 134, 0.07);
+    border-radius: 4px;
+    position: relative;
+
+    &::before {
+        content: '';
+        background-image: url(../images/stack/sprite.svg#bahandi-grid);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: 24px;
+        height: 24px;
+    }
+}
+
 .header {
+    ._border-bottom {
+        border-bottom: 1px solid #E3E3E3;
+    }
+
     &__inner {
         height: 123px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
     }
 
     &__nav {
         display: flex;
-        margin-right: -24px;
+        margin-left: 64px;
+        margin-right: auto;
 
         li {
             font-size: 16px;
             line-height: 22px;
-            margin-right: 24px;
+
+            &+li {
+                margin-left: 24px;
+            }
 
             a {
                 color: $mgr;
@@ -38,12 +68,14 @@
         position: relative;
         color: $mgr;
         font-weight: 600;
+        padding-left: 26px;
+        margin-right: 24px;
 
         &::before {
             content: "";
             position: absolute;
-            top: 2px;
-            left: -28px;
+            top: 0;
+            left: 0;
             background-image: url(../images/stack/sprite.svg#phone);
             background-size: cover;
             background-position: center;
@@ -74,9 +106,10 @@
 
 .footer {
     background-color: #07325B;
+    margin-top: 96px;
 
     &__inner {
-        height: 211px;
+
         padding: 50px 0px;
     }
 
@@ -160,7 +193,7 @@
     &__inner {}
 
     &__btn {
-        margin: 0 auto;
+        margin: 32px auto 0;
         background: $blue;
         width: 157px;
         height: 54px;
@@ -435,22 +468,5 @@
         background: $blue;
         color: #fff;
         border-radius: 4px;
-    }
-}
-
-.request {
-    margin-bottom: 64px;
-    &__inner {
-        height: 396px;
-        background: #FFFFFF;
-        box-shadow: 0px 24px 24px rgba(19, 116, 207, 0.05);
-        border-radius: 16px;
-        position: relative;
-        z-index: 1;
-    }
-    &__bg{
-        position: absolute;
-        right: 0;
-        bottom: 0;
     }
 }

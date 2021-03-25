@@ -1,12 +1,110 @@
 //1023
-@media(max-width:1230px) {
+@media(max-width:1270px) {
     .header {
         &__nav {
-            li {
-                margin-right: 15px;
+            margin-left: 20px;
+
+            li+li {
+                margin-left: 15px;
             }
         }
     }
 }
 
-@media(max-width:1023px) {}
+@media(max-width:1170px) {
+    .header {
+        &__nav {
+            li {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media(max-width:1050px) {
+    .bahandi {
+        display: block;
+    }
+
+    .header {
+        &__logo {
+            margin-right: auto;
+        }
+
+        &__nav {
+            display: none;
+        }
+    }
+
+    .footer {
+        &__inner {}
+
+        &__nav {
+            display: none;
+        }
+
+        &__socials {
+            margin-left: auto;
+            margin-right: 40px;
+        }
+    }
+}
+
+@media(max-width:537px) {
+    .footer {
+        &__inner {}
+
+        &__copyright {
+            margin-top: 24px;
+            flex-direction: column;
+            align-items: flex-start;
+
+            span {
+                margin-top: 8px;
+            }
+        }
+&__socials{
+    margin:0 auto;
+}
+        &__btn {
+            span {
+                display: none;
+            }
+
+            svg {
+                margin-right: 0;
+            }
+
+            width: 40px;
+            height: 40px;
+
+        }
+
+    }
+    .bahandi{
+        margin-right: 0;
+    }
+    .header__logo{
+        margin: 0 auto;
+    }
+    .header__btn {
+       span {
+            display: none;
+        }
+
+        svg {
+            margin-right: 0;
+        }
+
+        width: 40px;
+        height: 40px;
+
+    }
+    .header__logo {
+        margin: 0 auto;
+    }
+
+    .header__tel {
+        display: none;
+    }
+}
