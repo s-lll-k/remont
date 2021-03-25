@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--#include virtual="/templates/_head.html" -->
+
+<body>
+    <div class="block"></div>
+    <div class="wrapper">
+       <!--#include virtual="/templates/_header.html" -->
+        <div class="content">
+            <div class="container">
+                <div class="modal reg-end">
+                    <button class="modal-close"></button>
+                    <div class="reg-end__title title">
+                        Завершение регистрации
+                    </div>
+                    <div class="reg-end__form">
+                        <form action="">
+                            <label class="fieldset _siblings">
+                                <div class="fieldset__title">
+                                    Ваш номер телефона *
+                                </div>
+                                <input type="tel" class="input" required>
+                            </label>
+                            <input type="text" placeholder="Ваше имя" class="input _siblings" required>
+                            <input type="email" placeholder="E-mail" class="input _siblings" required>
+                            <button class="button button1 _siblings">
+                                Перейти в личный кабинет
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--#include virtual="/templates/_footer.html" -->
+    </div>
+</body>
+
+</html>

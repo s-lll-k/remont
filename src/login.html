@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--#include virtual="/templates/_head.html" -->
+
+<body>
+    <div class="block"></div>
+    <div class="wrapper">
+       <!--#include virtual="/templates/_header.html" -->
+        <div class="content">
+            <div class="container">
+                <div class="modal login">
+                    <button class="modal-close"></button>
+                    <div class="login__title title">
+                        Личный кабинет
+                    </div>
+                    <div class="login__form">
+                        <form action="">
+                            <label class="fieldset _siblings">
+                                <div class="fieldset__title">
+                                    Ваш номер телефона *
+                                </div>
+                                <input type="tel" class="input" required>
+                            </label>
+                            <button class="button button1 _siblings">
+                                Получить код
+                            </button>
+                        </form>
+                    </div>
+                    <div class="login__social">
+                        <div class="login__social-title">
+                            Войти как пользователь
+                        </div>
+                        <div class="login__social-text">
+                            Вы можете войти на сайт, если вы зарегистрированы на одном из этих сервисов:
+                        </div>
+                        <ul class="login__social-icons">
+                            <li>
+                                <a href="#">
+                                    <svg width="40" height="40">
+                                        <use xlink:href="images/stack/sprite.svg#google-circle"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="40" height="40">
+                                        <use xlink:href="images/stack/sprite.svg#vk-circle"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="40" height="40">
+                                        <use xlink:href="images/stack/sprite.svg#mailru-circle"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="40" height="40">
+                                        <use xlink:href="images/stack/sprite.svg#facebook-circle"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--#include virtual="/templates/_footer.html" -->
+    </div>
+</body>
+
+</html>

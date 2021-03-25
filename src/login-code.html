@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--#include virtual="/templates/_head.html" -->
+
+<body>
+    <div class="block"></div>
+    <div class="wrapper">
+       <!--#include virtual="/templates/_header.html" -->
+        <div class="content">
+            <div class="container">
+                <div class="modal login _code">
+                    <button class="modal-close"></button>
+                    <div class="login__title title">
+                        Личный кабинет
+                    </div>
+                    <div class="login__form">
+                        <form action="">
+                            <label class="fieldset _siblings">
+                                <div class="fieldset__title">
+                                    Код авторизации из СМС
+                                </div>
+                                <input type="text" class="input" required>
+                            </label>
+                            <div class="login__row _siblings">
+                                <button class="button button1">
+                                    Отправить
+                                </button>
+                                <p>
+                                    Вы сможете отправить код 
+                                    повторно через 57 секунд
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="login__social">
+                        <div class="login__social-title">
+                            Войти как пользователь
+                        </div>
+                        <div class="login__social-text">
+                            Вы можете войти на сайт, если вы зарегистрированы на одном из этих сервисов:
+                        </div>
+                        <ul class="login__social-icons">
+                            <li>
+                                <a href="#">
+                                    <svg width="40" height="40">
+                                        <use xlink:href="images/stack/sprite.svg#google-circle"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="40" height="40">
+                                        <use xlink:href="images/stack/sprite.svg#vk-circle"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="40" height="40">
+                                        <use xlink:href="images/stack/sprite.svg#mailru-circle"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="40" height="40">
+                                        <use xlink:href="images/stack/sprite.svg#facebook-circle"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--#include virtual="/templates/_footer.html" -->
+    </div>
+</body>
+
+</html>

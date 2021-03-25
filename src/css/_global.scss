@@ -41,6 +41,11 @@ body {
     font-size: 32px;
     line-height: 32px;
 }
+.title-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 // ШРИФТЫ 400 600 700 weight
 // font-family: 'Montserrat', sans-serif;
@@ -119,6 +124,24 @@ button {
     padding: unset;
     &::placeholder{
         color: #757575;
+    }
+}
+.fieldset{
+    display: block;
+    width: 100%;
+    padding-top: 14px;
+    position: relative;
+    &__title{
+        position: absolute;
+        background-color: #FFFFFF;
+        border-radius: 8px;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 4px;
+        color: #404040;
+        left: 3px;
+        top: 0;
+        z-index: 1;
     }
 }
 .fake-check {
