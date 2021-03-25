@@ -259,7 +259,7 @@
 
 .condition {
     margin-top: 96px;
-
+margin-bottom: 96px;
     &__text {
 
         width: 100%;
@@ -274,18 +274,149 @@
         border-left: 4px solid #4BB028;
     }
 
-    &__qoute {
-        position: absolute;
-        top: 45px;
-        right: 40px;
-        display: block;
-    }
+
 
     &__inner {
         position: relative;
         background: #F4F4F4;
         border-radius: 16px;
         padding: 40px;
+        padding-right: 130px;
+
+        &::after {
+            content: "";
+            top: 40px;
+            right: 40px;
+            width: 64px;
+            height: 64px;
+            position: absolute;
+            background-image: url(../images/stack/sprite.svg#left-quote);
+            background-size: cover;
+            background-position: center;
+        }
     }
 
+}
+
+.showroomin {
+    &__title {
+        color: $mgr;
+        margin-bottom: 16px;
+
+    }
+
+    .card1__row {
+        margin-bottom: 40px;
+    }
+
+    &__video {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+
+        &::after {
+            content: "";
+            background: #07325B;
+            opacity: 0.8;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        &-title {
+            @include M600;
+            font-size: 32px;
+            line-height: 45px;
+            color: #FFFFFF;
+            margin-bottom: 64px;
+        }
+
+        &-btn {
+            position: relative;
+            width: 96px;
+            height: 96px;
+            box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.07);
+            border-radius: 50%;
+            background-color: #fff;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 30px;
+                left: 40px;
+                width: 28px;
+                height: 40px;
+                background-image: url(../images/stack/sprite.svg#video-start);
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        &-subtitle {
+            @include M400;
+            font-size: 18px;
+            line-height: 25px;
+            color: #FFFFFF;
+            margin-top: 24px;
+        }
+    }
+
+    &__box {
+        text-align: center;
+        z-index: 2;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 232px;
+    }
+
+
+    &__bg {
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.block1 {
+    margin-top: 40px;
+    margin-bottom: 96px;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__box {
+        margin-left: 40px;
+        max-width: 624px;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+        font-size: 24px;
+        line-height: 24px;
+        @include M600;
+    }
+
+    &__text {
+
+        color: $gray;
+    }
+
+    &__logo {
+        border-radius: 8px;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            max-width: 664px;
+            height: 408px;
+        }
+    }
 }
