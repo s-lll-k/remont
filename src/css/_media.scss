@@ -2,9 +2,186 @@
 
 
 
+@media (max-width: 1250px){
+    .why{
+        &__box{
+            flex-wrap: wrap;
+            margin-top: -32px;
+            margin-left: -32px;
+        }
+        &__item{
+            width: calc(50% - 32px);
+            margin-left: 32px;
+            margin-top: 32px;
+        }
+        &__item2{
+            padding: 0;
+        }
+    }   
+
+    .banners{
+        &__box{
+            display: block;
+            margin-top: 24px;
+        }
+        &__item{
+            max-width: 100% !important;
+            & + &{
+                margin-left: 0;
+                margin-top: 24px;
+            }
+        }
+    }
+}
+@media (max-width: 1024px){
+    .title{
+        font-size: 32px;
+        line-height: 45px;
+    }
+    .banners{
+        &__slider{
+            &::after{
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: linear-gradient(84.2deg, rgba(33, 52, 69, 0.7) 23.77%, rgba(33, 52, 69, 0) 81.09%);
+                border-radius: 16px;
+            }
+            .slider-arrow{
+                position: absolute;
+                right: 40px;
+                bottom: 40px;
+                button{
+                    background: rgba(19, 116, 207, 0.7);
+                    &._not-active{
+                        background: rgba(19, 116, 207, 0.5);
+                        opacity: 0.4;
+                    }
+                }
+            }
+            &-item{
+                color: #FFF;
+                .title{
+                    margin-bottom: 8px;
+                }
+                p{
+                    max-width: 385px;
+                    color: #FFF;
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+            }
+            &-box{
+                max-width: 476px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .sm-title{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .why{
+        margin-top: 80px;
+        &__title{
+            margin-bottom: 40px;
+        }
+        &__subtitle{
+            display: none;
+        }
+        &__box2{
+            display: none;
+        }
+        &__item{
+            &-num{
+                font-size: 40px;
+                line-height: 40px;
+                text-align: center;
+            }
+            &-text{
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+            }
+        }
+    }
+}
+@media (max-width: 700px){
+    .banners{
+        &__slider{
+            &::after{
+                // transform: rotate(90deg);
+            }
+        }
+    }
+}
+
 @media (max-width: 537px){
     body{
         font-size: 16px;
         line-height: 24px;
+    }
+
+
+    .why{
+        margin-top: 64px;
+        &__box{
+            margin-top: -16px;
+        }
+        &__item{
+            width: calc(100% - 32px);
+            margin-top: 16px;
+            padding: 24px 19px;
+        }
+    }
+
+    .banners{
+        &__item{
+            background-color: #F4F4F4;
+            background-image: none !important;
+        }
+    }
+}
+
+@media (max-width: 425px){
+    .banners{
+        &__slider{
+            padding-bottom: 48px;
+            &::after{
+                height: calc(100% - 48px);
+            }
+            &-item{
+                padding: 16px;
+                .title{
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                .button{
+                    margin-top: 0;
+                }
+            }
+            .slider-arrow{
+                left: 50%;
+                transform: translateX(-50%);
+                right: unset;
+                bottom: 0;
+            }
+        }
+        &__box{
+            margin-top: 64px;
+        }
+        &__item{
+            padding: 16px;
+            padding-bottom: 23px;
+        }
     }
 }

@@ -26,13 +26,8 @@
 
 .banners{
     &__slider{
-        background-image: url(../images/banners-bg.jpg);
-        background-size: cover;
-        background-position: right;
         height: 421px;
         position: relative;
-        border-radius: 16px;
-        overflow: hidden;
         .slider-arrow{
             position: absolute;
             right: 40px;
@@ -45,16 +40,31 @@
                 }
             }
         }
+        &-image{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
         &-item{
             height: 100%;
+            border-radius: 16px;
+            overflow: hidden;
             padding: 40px;
+            position: relative;
             .title{
                 margin-bottom: 16px;
             }
             p{
                 font-size: 24px;
                 line-height: 36px;
-                margin-bottom: 16px;
+                margin-bottom: 24px;
                 color: #757575;
             }
             .button{
@@ -62,6 +72,8 @@
             }
         }
         &-box{
+            position: relative;
+            z-index: 1; 
             display: flex;
             flex-direction: column;
             height: 100%;
@@ -150,9 +162,10 @@
     }
     &__box{
         display: flex;
-        & + &{
-            margin-top: 67px;
-        } 
+    }
+    &__box2{
+        display: flex;
+        margin-top: 67px;
     }
     &__item{
         flex-grow: 1;
