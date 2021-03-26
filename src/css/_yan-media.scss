@@ -9,6 +9,41 @@
             }
         }
     }
+
+    .block1__inner {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .block1__logo {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .block1__box {
+        max-width: 100%;
+        margin-top: 35px;
+        margin-left: 0px;
+    }
+
+    .showroomin__box {}
+
+    .showroomin__video-title {
+        font-size: 28px;
+    }
+
+    .info {
+        &__inner {
+            flex-direction: column;
+
+            &-item {
+                margin-top: 25px;
+
+                min-width: 100%;
+            }
+        }
+    }
 }
 
 @media(max-width:1170px) {
@@ -22,6 +57,38 @@
 }
 
 @media(max-width:1116px) {
+    .breadcrumbs {
+        margin-top: 32px;
+
+    }
+
+    .showroomin__video-title {
+        font-size: 20px;
+    }
+
+    .showroomin__title,
+    .showroom__title,
+    .sliderOurwork__title,.details__title {
+        margin: 10px 0px !important;
+        font-size: 32px !important;
+    }
+
+    .title-wrapper {
+        flex-direction: column;
+        align-items: start;
+
+
+        a {
+            margin-top: 16px;
+            margin-bottom: 22px;
+
+        }
+    }
+
+    .showroomin__video-subtitle {
+        font-size: 16px;
+    }
+
     .bahandi {
         display: block;
     }
@@ -69,7 +136,73 @@
     }
 }
 
+@media(max-width:779px) {
+    .condition__text {
+        font-size: 18px;
+    }
+    .showroomin__subtitle,
+    .showroom__text,
+    .sliderOurwork__subtitle,.details__subtitle{
+        font-size: 18px !important;
+        margin-bottom: 24px;
+    }
+    .showroomin__title,
+    .showroom__title,
+    .sliderOurwork__title,.details__title {
+        font-size: 25px !important;
+
+    }
+
+    .showroomin__video-title {
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+
+    .showroomin__video-btn {
+        width: 70px;
+        height: 70px;
+
+        &::after {
+            top: 16px;
+            left: 26px
+        }
+    }
+
+    .showroomin__video-subtitle {
+        font-size: 15px;
+        margin-top: 10px;
+
+    }
+}
+
 @media(max-width:537px) {
+    .showroomin__subtitle,
+    .showroom__subtitle,
+    .sliderOurwork__subtitle,.details__subtitle{
+        font-size: 16px !important;
+    }
+    .showroomin__title,
+    .showroom__title,
+    .sliderOurwork__title,.details__title {
+        font-size: 24px !important;
+    }
+
+    .title-wrapper {}
+
+    .condition__text {
+        font-size: 16px;
+    }
+
+    .showroomin__video-title {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .showroomin__video-subtitle {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
     .footer {
 
 
@@ -151,3 +284,6 @@
         display: none;
     }
 }
+
+//1023 18px
+//537 16px
