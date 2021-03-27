@@ -8,10 +8,10 @@
 // background: $blue;
 // color: #fff;
 // border-radius: 4px;
-._textin{
+._textin {
     font-size: 24px;
     line-height: 36px;
-    color:$gray;
+    color: $gray;
 }
 
 
@@ -230,7 +230,7 @@
 
     &__subtitle {
         @include M400;
-     
+
     }
 }
 
@@ -256,11 +256,12 @@
         }
     }
 
-}f
+}
 
-.condition {
+ .condition {
     margin-top: 96px;
-margin-bottom: 96px;
+    margin-bottom: 96px;
+
     &__text {
 
         width: 100%;
@@ -302,7 +303,7 @@ margin-bottom: 96px;
 .showroomin {
     &__title {
         color: $mgr;
-       
+
 
     }
 
@@ -371,13 +372,13 @@ margin-bottom: 96px;
         position: absolute;
         margin: auto;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         top: 50%;
     }
 
 
     &__bg {
-display: block;
+        display: block;
         width: 100%;
         height: 100%;
         object-fit: cover;

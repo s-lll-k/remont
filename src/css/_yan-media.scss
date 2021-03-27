@@ -70,8 +70,8 @@
         font-size: 20px;
     }
 
-   
-  
+
+
 
     .showroomin__video-subtitle {
         font-size: 16px;
@@ -126,15 +126,17 @@
 
 @media(max-width:1024px) {
     .card1-inner {
-        .card1{
+        .card1 {
             width: calc(50% - 32px);
-            &__image{
+
+            &__image {
                 height: 250px;
             }
         }
-        .card1._big{
-            .card1__image{
-            height: 250px;
+
+        .card1._big {
+            .card1__image {
+                height: 250px;
             }
         }
     }
@@ -150,7 +152,7 @@
         line-height: 30px;
     }
 
- 
+
 
     .showroomin__video-title {
         margin-bottom: 25px;
@@ -174,25 +176,29 @@
     }
 }
 
-@media(max-width:768px){
-    ._textin{
+@media(max-width:768px) {
+    ._textin {
         font-size: 16px !important;
         line-height: 24px !important;
     }
 }
-@media(max-width:600px){
+
+@media(max-width:600px) {
     .card1-inner {
-        .card1,.card1._big{
+
+        .card1,
+        .card1._big {
             width: calc(100% - 32px);
         }
     }
 }
+
 @media(max-width:537px) {
 
 
-   
 
-  
+
+
 
     .condition__text {
         font-size: 16px;
@@ -262,17 +268,21 @@
 }
 
 @media(max-width:425px) {
-    ._textin{
+    ._textin {
         font-size: 16px !important;
         line-height: 24px !important;
     }
+
     .card1-inner {
-        .card1,.card1._big{
-           .card1__image{
-               height: 200px;
-           }
+
+        .card1,
+        .card1._big {
+            .card1__image {
+                height: 200px;
+            }
         }
     }
+
     .showroomin__video-title {
         line-height: 25px;
     }
