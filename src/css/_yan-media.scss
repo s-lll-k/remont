@@ -61,14 +61,17 @@
         margin-top: 32px;
 
     }
-
+.showroomin__video-title{
+    margin-bottom: 28px;
+}
     .showroomin__video-title {
         font-size: 20px;
     }
 
     .showroomin__title,
     .showroom__title,
-    .sliderOurwork__title,.details__title {
+    .sliderOurwork__title,
+    .details__title {
         margin: 10px 0px !important;
         font-size: 32px !important;
     }
@@ -90,7 +93,7 @@
     }
 
     .bahandi {
-        display: block;
+        display: none;
     }
 
     .header {
@@ -140,15 +143,22 @@
     .condition__text {
         font-size: 18px;
     }
+    .showroomin__video-title{
+        white-space: nowrap;
+        line-height: 30px;
+    }
     .showroomin__subtitle,
     .showroom__text,
-    .sliderOurwork__subtitle,.details__subtitle{
+    .sliderOurwork__subtitle,
+    .details__subtitle {
         font-size: 18px !important;
         margin-bottom: 24px;
     }
+
     .showroomin__title,
     .showroom__title,
-    .sliderOurwork__title,.details__title {
+    .sliderOurwork__title,
+    .details__title {
         font-size: 25px !important;
 
     }
@@ -176,14 +186,19 @@
 }
 
 @media(max-width:537px) {
+
+
     .showroomin__subtitle,
     .showroom__subtitle,
-    .sliderOurwork__subtitle,.details__subtitle{
+    .sliderOurwork__subtitle,
+    .details__subtitle {
         font-size: 16px !important;
     }
+
     .showroomin__title,
     .showroom__title,
-    .sliderOurwork__title,.details__title {
+    .sliderOurwork__title,
+    .details__title {
         font-size: 24px !important;
     }
 
@@ -251,6 +266,52 @@
 
     .bahandi {
         margin-right: 0;
+    }
+
+
+}
+
+@media(max-width:425px) {
+    .showroomin__video-title {
+        line-height: 25px;
+    }
+
+    .showroomin__video-subtitle {
+        white-space: nowrap;
+    }
+
+    .showroomin__video-btn {
+        height: 55px;
+        width: 55px;
+    }
+
+    .condition__inner {
+        padding: 40px 69px 40px 20px;
+    }
+
+    .condition__inner::after {
+        top: 48px;
+        right: 2px;
+        width: 64px;
+        height: 44px;
+    }
+
+    .condition__text {
+        padding-left: 15px;
+    }
+
+    .showroomin__video-btn::after {
+        top: 10px;
+        left: 17px;
+        height: 33px;
+    }
+
+    .showroomin__video-title {
+        font-size: 14px;
+    }
+
+    .bahandi {
+        display: block;
     }
 
     .header__logo {
