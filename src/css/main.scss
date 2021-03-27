@@ -605,8 +605,21 @@
         }
     }
 }
-
+.filter-call{
+    display: none;
+    max-width: max-content;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 16px 32px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+}
 .showroom{
+    &__more{
+        margin: 40px auto 0;
+    }
     .title-wrapper{
         margin-bottom: 16px;
     }
