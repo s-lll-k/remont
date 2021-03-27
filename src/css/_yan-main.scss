@@ -222,15 +222,11 @@
     &__inner {}
 
     &__title {
-        font-size: 40px;
-        line-height: 140%;
-        @include M600;
-        margin-bottom: 16px;
+        
     }
 
     &__subtitle {
         @include M400;
-
     }
 }
 
