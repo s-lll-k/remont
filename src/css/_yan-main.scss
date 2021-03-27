@@ -11,7 +11,7 @@
 ._textin{
     font-size: 24px;
     line-height: 36px;
-    color:$mgr;
+    color:$gray;
 }
 
 
@@ -225,15 +225,12 @@
         font-size: 40px;
         line-height: 140%;
         @include M600;
+        margin-bottom: 16px;
     }
 
     &__subtitle {
         @include M400;
-        color: $gray;
-        font-size: 24px;
-        opacity: 0.8;
-        line-height: 150%;
-        margin-bottom: 40px;
+     
     }
 }
 
@@ -259,7 +256,7 @@
         }
     }
 
-}
+}f
 
 .condition {
     margin-top: 96px;
@@ -305,7 +302,7 @@ margin-bottom: 96px;
 .showroomin {
     &__title {
         color: $mgr;
-        margin-bottom: 16px;
+       
 
     }
 
