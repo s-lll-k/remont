@@ -244,6 +244,9 @@
             &__image{
                 height: 287px;
             }
+            &__text{
+                margin-bottom: 0;
+            }
         }
     }
     &._comments{
@@ -583,11 +586,14 @@
         &-btn{
             margin-top: 24px;
             display: flex;
+            align-items: flex-start;
         }
         .input{
             max-width: 270px;
             padding: 0 16px;
             height: 50px;
+            font-size: 14px;
+            line-height: 19px;
             & + .input{
                 max-width: 234px;
                 margin-left: 16px;

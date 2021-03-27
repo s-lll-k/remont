@@ -3,6 +3,19 @@
 
 
 @media (max-width: 1250px){
+    .request{
+        padding-right: 415px;
+        &__image{
+            img{
+                width: 400px;
+            }
+        }
+    }
+    .slider-box{
+        &__text{
+            max-width: 650px !important;
+        }
+    }
     .why{
         &__box{
             flex-wrap: wrap;
@@ -34,6 +47,95 @@
     }
 }
 @media (max-width: 1024px){
+    .request{
+        background-color: $blue;
+        color: #FFF;
+        padding: 32px;
+        &__image{
+            display: none;
+        }
+        &__text{
+            color: #FFF;
+            font-size: 16px;
+            line-height: 24px;
+            max-width: 440px;
+        }
+        &__form{
+            .input{
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                background-color: transparent;
+                color: #FFF;
+                &::placeholder{
+                    color: #FFF;
+                }
+            }
+            .fake-check{
+                &__text{
+                    color: #FFF;
+                }
+            }
+            .button{
+                background-color: #FFF;
+                color: $blue;
+            }
+            &-text{
+                color: #FFF;
+            }
+        }
+    }
+    .card1{
+        &__title{
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+    .slider-box{
+        .client-comment{
+            max-width: 400px;
+        }
+        &._blog{
+            .card1__image{
+                height: 250px;
+            }
+        }
+        &._our-work{
+            .card1__image{
+                height: 310px;
+            }
+        }
+        &._showroom{
+            .card1__image{
+                height: 500px;
+            }
+            .slider-box__slider{
+                margin-top: 32px;
+            }
+        }
+        .card1{
+            max-width: 400px;
+            .card1__category{
+                display: none;
+            }
+        }
+        &__btn{
+            margin-left: 0;
+        }
+        &__title{
+            margin-bottom: 0;
+        }
+        &__text{
+            display: none;
+        }
+        &__row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    .sm-title{
+        font-size: 24px;
+        line-height: 24px;
+    }
     .title{
         font-size: 32px;
         line-height: 45px;
@@ -82,12 +184,27 @@
 }
 
 @media (max-width: 768px){
-    .sm-title{
-        font-size: 24px;
-        line-height: 24px;
+    .client-comment{
+        &__box{
+            padding: 24px;
+            padding-top: 81px;
+        }
+        &__quotes{
+            top: 16px;
+            right: 20px;
+        }
+    }
+    .slider-box{
+        &._comments,
+        &._blog,
+        &._our-work,
+        &._showroom{
+            margin: 80px 0;
+        }
     }
     .why{
         margin-top: 80px;
+        margin-bottom: 80px;
         &__title{
             margin-bottom: 40px;
         }
@@ -111,22 +228,81 @@
         }
     }
 }
-@media (max-width: 700px){
-    .banners{
-        &__slider{
-            &::after{
-                // transform: rotate(90deg);
+@media (max-width: 600px){
+    .slider-box{
+        &._showroom{
+            .slider-box__inner{
+                padding-bottom: 127px;
             }
+            .slider-box__nav{
+                bottom: 63px;
+            }
+        }
+        &__inner{
+            position: relative;
+            padding-bottom: 64px;
+        }
+        &__nav{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            justify-content: space-between;
+        }
+        &__link{
+            order: 1;
+            margin-right: 0;
+        }
+        &__btn{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin-top: 0;
         }
     }
 }
-
 @media (max-width: 537px){
     body{
         font-size: 16px;
         line-height: 24px;
     }
+    .sm-title{
+        font-size: 18px;
+        line-height: 25px;
+    }
 
+    .request{
+        padding: 16px;
+        padding-bottom: 35px;
+        &__title{
+            line-height: 100%;
+            margin-bottom: 8px;
+        }
+        &__text{
+            margin-bottom: 16px;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &__form{
+            &-row{
+                display: block;
+            }
+            &-btn{
+                display: block;
+            }
+            &-text{
+                margin-top: 16px;
+            }
+            .input{
+                max-width: 100%;
+                & + .input{
+                    max-width: 100%;
+                    margin-left: 0;
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
 
     .why{
         margin-top: 64px;
@@ -149,6 +325,56 @@
 }
 
 @media (max-width: 425px){
+    .client-comment{
+        &__text{
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &__box{
+            padding: 16px;
+            padding-top: 81px;
+        }
+        &__quotes{
+            display: none;
+        }
+    }
+    .slider-box{
+        &._comments,
+        &._blog,
+        &._our-work,
+        &._showroom{
+            margin: 64px 0;
+        }
+        .card1{
+            width: 265px !important;
+            &__title{
+                font-size: 16px !important;
+                line-height: 22px !important;
+            }
+            &__text{
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+        &._our-work,
+        &._blog{
+            .card1{
+                &__image{
+                    height: 200px; 
+                }
+            }
+        }
+        &._showroom{
+            .card1{
+                &__image{
+                    height: 340px;
+                }
+            }
+        }
+        &__slider{
+            margin-top: 16px;
+        }
+    }
     .banners{
         &__slider{
             padding-bottom: 48px;

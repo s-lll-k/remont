@@ -8,6 +8,10 @@ html {
     box-sizing: inherit;
 }
 
+._last-section{
+    margin-bottom: 0 !important;
+}
+
 html,
 body {
     height: 100%;
@@ -154,7 +158,10 @@ button {
 
         &:checked {
             & + .fake-check__mask {
-                span {
+                background-color: $blue;
+                border-color: $blue;
+                &::after {
+                    content: '';
                     opacity: 1;
                 }
             }
@@ -175,16 +182,20 @@ button {
         background-color: #fff;
         border: 1px solid rgba(117, 117, 117, 0.5);
         border-radius: 4px;
+        transition: all .2s;
         position: relative;
 
-        span {
+        &::after {
+            content: '';
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-            width: 10px;
-            height: 10px;
-            background-color: #000;
+            width: 12px;
+            height: 12px;
+            background-image: url(../images/stack/sprite.svg#check);
+            background-position: center;
+            background-size: cover;
             opacity: 0;
             transition: all .2s;
         }
