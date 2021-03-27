@@ -338,6 +338,16 @@
             display: none;
         }
     }
+    .card1{
+        &__title{
+            font-size: 16px !important;
+            line-height: 22px !important;
+        }
+        &__text{
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
     .slider-box{
         &._comments,
         &._blog,
@@ -347,14 +357,6 @@
         }
         .card1{
             width: 265px !important;
-            &__title{
-                font-size: 16px !important;
-                line-height: 22px !important;
-            }
-            &__text{
-                font-size: 14px;
-                line-height: 21px;
-            }
         }
         &._our-work,
         &._blog{

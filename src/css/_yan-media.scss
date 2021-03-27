@@ -204,6 +204,13 @@
 
     }
 }
+
+@media(max-width:768px){
+    ._textin{
+        font-size: 16px !important;
+        line-height: 24px !important;
+    }
+}
 @media(max-width:600px){
     .card1-inner {
         .card1,.card1._big{
@@ -214,21 +221,9 @@
 @media(max-width:537px) {
 
 
-    .showroomin__subtitle,
-    .showroom__subtitle,
-    .sliderOurwork__subtitle,
-    .details__subtitle {
-        font-size: 16px !important;
-    }
+   
 
-    .showroomin__title,
-    .showroom__title,
-    .sliderOurwork__title,
-    .details__title {
-        font-size: 24px !important;
-    }
-
-    .title-wrapper {}
+  
 
     .condition__text {
         font-size: 16px;
@@ -298,6 +293,10 @@
 }
 
 @media(max-width:425px) {
+    ._textin{
+        font-size: 16px !important;
+        line-height: 24px !important;
+    }
     .card1-inner {
         .card1,.card1._big{
            .card1__image{
