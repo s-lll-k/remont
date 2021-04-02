@@ -62,7 +62,7 @@
     //     margin-right: 20px;
     // }
     // }
-    
+
     // .how__logo:nth-of-type(2n){
     //     margin-left: 20px;
     //     margin-right: 0;
@@ -141,6 +141,29 @@
 }
 
 @media(max-width:1024px) {
+
+    .how__title {
+        max-width: 310px;
+        line-height: 26px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .how__start {
+        flex-direction: column;
+
+        &-item {
+            max-width: 100% !important;
+            padding-right: 32px !important;
+        }
+
+        &-item:first-child {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+    }
+
     .card1-inner {
         .card1 {
             width: calc(50% - 32px);
