@@ -1146,4 +1146,117 @@
     }
 }
 
+.package{
+    padding: 24px;
+    padding-bottom: 32px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 24px 24px rgba(19, 116, 207, 0.05);
+    border-radius: 16px;
+    transition: all .3s;
+    &:hover{
+        transform: translateY(-24px);
+        box-shadow: 0px 24px 24px rgba(19, 116, 207, 0.1);
+    }
+    &__name{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+    &__price{
+        font-size: 14px;
+        line-height: 14px;
+        color: #757575;
+        span{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 24px;
+            color: #4BB028;
+            margin-right: 8px;
+        }
+    }
+    &__image{
+        margin-bottom: 24px;
+        img{
+            width: 100%;
+            height: 264px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    }
+    &__desc{
+        margin-top: 32px;
+        &-item{
+            display: flex;
+            align-items: center;
+            & + &{
+                margin-top: 24px;
+            }
+        }
+        &-icon{
+            margin-right: 16px;
+            width: 48px;
+            min-width: 48px;
+            height: 48px;
+            background-color: #F4F4F4;
+            border-radius: 50%;
+            position: relative;
+            svg{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &-name{
+            font-size: 18px;
+            line-height: 18px;
+            margin-bottom: 16px;
+        }
+        &-text{
+            font-size: 16px;
+            line-height: 16px;
+            color: #757575;
+        }
+    }
+}
+
+.packages{
+    &__item{
+        & + &{
+            margin-top: 64px;
+        }
+        &-row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-title{
+            font-size: 24px;
+            line-height: 36px;
+            color: #757575;
+        }
+    }
+    &__cards{
+        margin-top: 24px;
+        display: flex;
+        margin-left: -32px;
+        .package{
+            width: calc(33.33% - 32px);
+            margin-left: 32px;
+        }
+    }
+    &__text{
+        max-width: 772px;
+        margin-top: 8px;
+        font-size: 18px;
+        line-height: 27px;
+        color: #757575;
+        opacity: 0.8;
+    }
+    &__inner{
+        margin-top: 40px;
+    }
+}
+
 @import "media";
