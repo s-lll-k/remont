@@ -44,6 +44,19 @@
             }
         }
     }
+
+    .materials__box {
+        flex-wrap: wrap;
+
+        ._longer,
+        ._short {
+            max-width: 100%;
+        }
+
+        ._short {
+            object-fit: contain;
+        }
+    }
 }
 
 @media(max-width:1170px) {
@@ -153,7 +166,7 @@
         max-width: 320px !important;
         font-size: 14px;
         margin-bottom: 10px;
-       
+
     }
 
     .how__steps-item {
@@ -166,8 +179,9 @@
             margin-right: 0;
             margin-left: 16px;
         }
-       
-        .how__title, .how__subtitle{
+
+        .how__title,
+        .how__subtitle {
             text-align: right;
 
         }
@@ -231,6 +245,18 @@
             .card1__image {
                 height: 250px;
             }
+        }
+    }
+}
+
+@media(max-width:927px) {
+    .materials__item {
+        margin-right: 32px;
+    }
+
+    .materials__box {
+        ._bigger {
+            max-width: 100%;
         }
     }
 }
@@ -362,6 +388,10 @@
 }
 
 @media(max-width:425px) {
+    .materials__item {
+        margin-right: 20px;
+    }
+
     ._textin {
         font-size: 16px !important;
         line-height: 24px !important;

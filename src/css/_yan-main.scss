@@ -14,7 +14,6 @@
     color: $gray;
 }
 
-
 .bahandi {
     margin-right: 40px;
     display: none;
@@ -423,12 +422,15 @@
         margin-bottom: 40px;
     }
 }
-.why__step{
+
+.why__step {
     margin-bottom: 96px;
 }
-.how__feedback{
+
+.how__feedback {
     margin-top: 96px;
 }
+
 .how {
 
     &__start {
@@ -470,7 +472,8 @@
 
     &__steps {
         margin-top: 61px;
-margin-bottom: 96px;
+        margin-bottom: 96px;
+
         &-inner {
             display: flex;
             flex-direction: column;
@@ -505,9 +508,9 @@ margin-bottom: 96px;
         align-items: center;
         padding-left: 75px;
 
-      
 
-    
+
+
 
         &:nth-of-type(even) {
             transform: rotateX(-180deg);
@@ -524,6 +527,7 @@ margin-bottom: 96px;
             border-bottom-left-radius: 16px;
             margin-right: 3px;
             align-self: flex-start;
+
             &._bot-left-active {
                 border-left: 3px solid $blue;
                 border-bottom: 3px solid $blue;
@@ -538,6 +542,7 @@ margin-bottom: 96px;
             border-top: 3px dashed #E2E2E2;
             border-top-right-radius: 16px;
             align-self: flex-end;
+
             &._top-right-active {
                 border-right: 3px solid $blue;
                 border-top: 3px solid $blue;
@@ -596,6 +601,88 @@ margin-bottom: 96px;
                 font-size: 24px;
                 line-height: 34px;
             }
+        }
+    }
+}
+
+.materials {
+    &__btn {
+        margin-top: 32px;
+    }
+
+    .banners__box {
+        margin-top: 96px;
+    }
+
+    &__title {
+        margin-top: 96px;
+        @include M600;
+        font-size: 32px;
+        line-height: 32px;
+        color: $mgr;
+        margin-bottom: 32px;
+    }
+
+    &__subtitle {
+        @include M600;
+        color: $mgr;
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: flex-start;
+        margin-right: -32px;
+        margin-bottom: 40px;
+
+        ._bigger {
+            border-radius: 16px;
+            width: 100%;
+            max-width: 432px;
+            height: 561px;
+            object-fit: cover;
+        }
+
+        ._longer {
+            border-radius: 16px;
+            width: 100%;
+            max-width: 781px;
+            height: 365px;
+            object-fit: cover;
+        }
+
+        ._short {
+            border-radius: 16px;
+            height: 372px;
+            object-fit: cover;
+            width: 100%;
+            max-width: 547px;
+        }
+    }
+
+    &__item {
+        margin-right: 32px;
+margin-bottom: 20px;
+        &-image {
+            border-radius: 8px;
+            object-fit: cover;
+            margin-bottom: 16px;
+        }
+
+        &-name {
+            color: $mgr;
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: 600;
+        }
+
+        &-text {
+
+            color: $mgr;
+            font-size: 18px;
+            line-height: 27px;
         }
     }
 }
