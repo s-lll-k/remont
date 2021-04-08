@@ -60,7 +60,48 @@
         }
     }
 }
+
+@media (max-width: 1120px){
+    .packages{
+        &__cards{
+            flex-wrap: wrap;
+            margin-top: 0;
+            .package{
+                width: calc(50% - 32px);
+                margin-top: 32px;
+            }
+        }
+    }
+}
+
 @media (max-width: 1024px){
+    .b-title{
+        font-size: 32px;
+        line-height: 45px;
+    }
+    .chooseplan{
+        &__cards{
+            .chooseplan-card{
+                width: calc(50% - 32px);
+            }
+        }
+    }
+    .chooseapart{
+        &__title{
+            margin-bottom: 16px;
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__btns{
+            margin-top: 24px;
+            & > a{
+                height: unset;
+                line-height: unset;
+            }
+        }
+    }
     .contacts{
         &__inner{
             display: block;
@@ -255,6 +296,41 @@
 }
 
 @media (max-width: 768px){
+    .didnt-find{
+        padding: 20px 16px;
+        &__title{
+            font-size: 24px;
+            line-height: 26px;
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+    .package{
+        &:hover{
+            transform: none;
+        }
+    }
+    .packages{
+        &__text{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__item{
+            &-row{
+                display: block;
+            }
+            &-link{
+                margin-top: 10px;
+            }
+        }
+        &__cards{
+            .package{
+                width: calc(100% - 32px);
+            }
+        }
+    }
     .contacts{
         &__contacts{
             display: block;
@@ -333,6 +409,39 @@
     }
 }
 @media (max-width: 600px){
+    .b-title{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .chooseplan{
+        &__cards{
+            .chooseplan-card{
+                width: calc(100% - 32px);
+            }
+        }
+    }
+    .chooseplan-card{
+        &__image{
+            height: 180px;
+        }
+    }
+    .chooseapart{
+        &__text{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__btns{
+            display: block;
+            & > a{
+                margin: 0 auto;
+                & + a{
+                    margin: 0 auto;
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+
     .card1._horizontal{
         display: block;
         .card1{
@@ -442,9 +551,37 @@
             background-image: none !important;
         }
     }
+
+    .steps{
+        &__line{
+            margin: 18px 0px;
+        }
+        &__item{
+            &-name{
+                font-size: 14px;
+                line-height: 16px;
+            }
+            &-text{
+                font-size: 11px;
+                line-height: 13px;
+            }
+        }
+    }
 }
 
 @media (max-width: 425px){
+    .steps{
+        &__item{
+            &-name{
+                font-size: 12px;
+                line-height: 16px;
+            }
+            &-text{
+                font-size: 9px;
+                line-height: 11px;
+            }
+        }
+    }
     .faq{
         &__item{
             .accordion-btn{
