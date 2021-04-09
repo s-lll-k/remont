@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--#include virtual="/templates/_head.html" -->
+
+<body>
+    <div class="block"></div>
+    <div class="wrapper">
+       <!--#include virtual="/templates/_header.html" -->
+        <div class="content">
+            <div class="container">
+                <div class="modal submitapp">
+                    <button class="modal-close"></button>
+                    <div class="submitapp__title title">
+                        Оставить заявку
+                    </div>
+                    <p class="submitapp__text">
+                        Заполните форму, администратор свяжется с вами в течение часа, поможет оформить документы и ответить на все интересующие вас вопросы.
+                    </p>
+                    <div class="submitapp__form">
+                        <form action="">
+                            <div class="submitapp__row">
+                                <input type="text" class="input" required placeholder="Ваше имя">
+                                <input type="tel" class="input" required placeholder="Ваш номер телефона *">
+                            </div>
+                            <input type="text" class="input" required placeholder="Ваш вопрос">
+                            <a href="#" class="download-link">
+                                <svg width="24" height="24">
+                                    <use xlink:href="images/stack/sprite.svg#download"></use>
+                                </svg>
+                                Скачать проект договора
+                            </a>
+                            <div class="submitapp__btn">
+                                <button type="submit" class="button button1">
+                                    Отправить заявку
+                                </button>
+                                <div class="submitapp__btn-text">
+                                    Кликая на кнопку «Отправить заявку» я принимаю условия <a href="#">политики конфиденциальности</a> и обработки данных
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--#include virtual="/templates/_footer.html" -->
+    </div>
+</body>
+
+</html>
