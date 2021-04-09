@@ -413,6 +413,39 @@
         font-size: 20px;
         line-height: 25px;
     }
+    .modal{
+        padding: 50px 25px;
+    }
+    .modal-close{
+        width: 15px;
+        height: 15px;
+    }
+    .submitapp{
+        &__row{
+            display: block;
+            input + input{
+                margin-left: 0;
+                margin-top: 24px;
+            } 
+        }
+        &__btn{
+            display: block;
+            & > .button{
+                margin-right: 0;
+                margin-bottom: 20px;
+                height: unset;
+            }
+        }
+    }
+    .login{
+        &__row{
+            display: block;
+            p{
+                margin-left: 0;
+                margin-top: 12px;
+            }
+        }
+    }
     .chooseplan{
         &__cards{
             .chooseplan-card{
@@ -570,6 +603,20 @@
 }
 
 @media (max-width: 425px){
+    .commentpop{
+        .client-comment{
+            &__video{
+                left: 90px;
+            }
+            &__name{
+                position: static;
+                margin-bottom: 12px;
+            }
+            &__text{
+                max-height: 160px;
+            }
+        }
+    }
     .steps{
         &__item{
             &-name{
