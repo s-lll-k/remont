@@ -263,7 +263,11 @@ svg {
         display: block;
     }
 }
-
+.download-link-border{
+    padding: 23px 31px;
+    border: 1px solid rgba(19, 116, 207, 0.5);
+    border-radius: 4px;
+}
 .download-link{
     padding-left: 34px;
     position: relative;
