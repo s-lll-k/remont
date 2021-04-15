@@ -1381,6 +1381,20 @@
             & + .fieldset{
                 margin-top: 18px;
             }
+            &__title{
+                background-color: #FCFCFC;
+            }
+        }
+        .input{
+            height: 70px;
+            padding: 0 16px;
+            background-color: transparent;
+        }
+        &-row{
+            display: flex;
+            .input1 + .input1{
+                margin-left: 32px;
+            }
         }
     }
     &__rooms{
@@ -1446,6 +1460,121 @@
     }
     .didnt-find{
         margin-bottom: 32px;
+    }
+    ._margin-top{
+        margin-top: 32px;
+    }
+    &__add-room{
+        padding-left: 57px !important;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            left: 24px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-image: url(../images/stack/sprite.svg#add);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    &__roomcard{
+        margin-top: 56px;
+        &-title{
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            color: #757575;
+            margin-bottom: 20px;
+        }
+        &-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -32px;
+            margin-top: -24px;
+        }
+        .chooseplan-room{
+            width: calc(33.33% - 32px);
+            margin-left: 32px;
+            margin-top: 24px;
+        }
+        &-btns{
+            display: flex;
+            max-width: 484px;
+            width: 100%;
+            margin: 40px auto 0;
+            .button{
+                max-width: 226px;
+                width: 100%;
+                height: 56px;
+                display: flex;
+                align-items: center;
+            }
+            .button + .button{
+                margin-left: 32px;
+            }
+        }
+    }
+}
+.chooseplan-room{
+    padding: 24px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(12, 75, 134, 0.07);
+    border-radius: 4px;
+    position: relative;
+    &:hover{
+        .chooseplan-room__delete{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    &__delete{
+        visibility: hidden;
+        opacity: 0;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 24px;
+        right: 12px;
+        background-image: url(../images/stack/sprite.svg#delete);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all .3s;
+    }
+    &__name{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #404040;
+        margin-bottom: 15px;
+        padding-right: 32px;
+    }
+    &__input{
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 22px;
+        span{
+            color: #757575;
+            margin-left: 8px;
+            white-space: nowrap;
+        }
+        input{
+            max-width: 194px;
+            width: 100%;
+            outline: none;
+            padding: 8px 12px;
+            border: 1px solid rgba(19, 116, 207, 0.5);
+            border-radius: 4px;
+            font-size: 16px;
+            line-height: 22px;
+            &::placeholder{
+                color: $blue;
+            }
+        }
     }
 }
 
@@ -1835,6 +1964,138 @@
         font-size: 14px;
         line-height: 19px;
         color: #757575;
+    }
+}
+
+.selectroom{
+    max-width: 524px;
+    width: 100%;
+    margin: 0 auto;
+    &__btn{
+        margin-top: 24px;
+    }
+}
+
+.myremont{
+    margin-top: 48px;
+    &__inner{
+        display: flex;
+    }
+    &__title{
+        margin-bottom: 40px;
+    }
+    &__aside{
+        height: max-content;
+        width: 300px;
+        min-width: 300px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 24px 24px rgba(19, 116, 207, 0.05);
+        border-radius: 16px;
+        padding: 32px 24px;
+        &-list{
+            li + li{
+                margin-top: 24px;
+            }
+            a{
+                display: block;
+                max-width: max-content;
+                font-size: 16px;
+                line-height: 24px;
+                padding-left: 32px;
+                position: relative;
+                &._active{
+                    color: $blue;
+                    svg path{
+                        fill: $blue;
+                    }
+                }
+                svg{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    &__wrapper{
+        width: 100%;
+        margin-left: 48px;
+        .myremont-item + .myremont-item{
+            margin-top: 32px;
+        }
+    }
+}
+
+.myremont-item{
+    display: flex;
+    padding: 24px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 24px 24px rgba(19, 116, 207, 0.05);
+    border-radius: 16px;
+    &__image{
+        max-width: 384px;
+        width: 100%;
+        height: 264px;
+        margin-right: 32px;
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    }
+    &__wrapper{
+        min-width: 400px;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        color: #404040;
+        margin-bottom: 16px;
+    }
+    &__address{
+        font-size: 16px;
+        line-height: 16px;
+        color: #757575;
+    }
+    &__box{
+        margin-top: 32px;
+        display: flex;
+    }
+    &__col{
+        & + &{
+            margin-left: 48px;
+        }
+    }
+    &__desc{
+        & + &{
+            margin-top: 24px;
+        }
+        &._status{
+            .myremont-item__desc-name{
+                font-weight: 600;
+            }
+        }
+        &-name{
+            font-size: 18px;
+            line-height: 18px;
+            color: #404040;
+            margin-bottom: 16px;
+        }
+        &-text{
+            font-size: 16px;
+            line-height: 16px;
+            color: #757575;
+            &._yellow{
+                color: #EF9326;
+            }
+            &._green{
+                color: #4BB028;
+            }
+        }
     }
 }
 

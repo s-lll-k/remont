@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--#include virtual="/templates/_head.html" -->
+
+<body>
+    <div class="block"></div>
+    <div class="wrapper">
+        <!--#include virtual="/templates/_headerBorder.html" -->
+
+        <div class="content">
+            <section class="steps">
+                <div class="container">
+                    <div class="steps__inner">
+                        <div class="steps__item">
+                            <div class="steps__item-icon">
+                                <span></span>
+                            </div>
+                            <h6 class="steps__item-name">
+                                Шаг первый
+                            </h6>
+                            <p class="steps__item-text">
+                                Выбор квартиры
+                            </p>
+                        </div>
+                        <div class="steps__line">
+                        </div>
+                        <div class="steps__item _active">
+                            <div class="steps__item-icon">
+                                <span></span>
+                            </div>
+                            <h6 class="steps__item-name">
+                                Шаг второй
+                            </h6>
+                            <p class="steps__item-text">
+                                Выбор квартиры
+                            </p>
+                        </div>
+                        <div class="steps__line">
+                        </div>
+                        <div class="steps__item">
+                            <div class="steps__item-icon">
+                                <span></span>
+                            </div>
+                            <h6 class="steps__item-name">
+                                Шаг третий
+                            </h6>
+                            <p class="steps__item-text">
+                                Выбор квартиры
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="chooseplan">
+                <div class="container">
+                    <h1 class="chooseplan__title b-title">
+                        Выбор планировки
+                    </h1>
+                    <div class="chooseplan__form">
+                        <form>
+                            <label class="fieldset">
+                                <div class="fieldset__title">
+                                    Выберите город
+                                </div>
+                                <select>
+                                    <option value="" selected>г. Нур-Султан</option>
+                                    <option value="">г. Алматы</option>
+                                    <option value="">г. Караганда</option>
+                                </select>
+                            </label>
+                            <div class="chooseplan__rooms">
+                                <div class="chooseplan__rooms-title">
+                                    Укажите количество комнат
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            1
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="_active" href="#">
+                                            3
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="_success" href="#">
+                                            4
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <input type="text" class="input _margin-top" placeholder="Название ЖК или адрес">
+                            <div class="chooseplan__form-row _margin-top">
+                                <label class="input1">
+                                    <div class="input1__val">
+                                        кв. м.
+                                    </div>
+                                    <input type="text" placeholder="Площадь">
+                                </label>
+                                <label class="input1">
+                                    <div class="input1__val">
+                                        м.
+                                    </div>
+                                    <input type="text" placeholder="Высота потолков">
+                                </label>
+                            </div>
+                            <label class="input1 _margin-top">
+                                <div class="input1__val">
+                                    м.
+                                </div>
+                                <input type="text" placeholder="Количество дверных проемов">
+                            </label>
+                            <label class="input1 _margin-top">
+                                <div class="input1__val">
+                                    м.
+                                </div>
+                                <input type="text" placeholder="Высота дверных проемов">
+                            </label>
+                        </form>
+                    </div>
+                    <div class="chooseplan__roomcard">
+                        <h6 class="chooseplan__roomcard-title">
+                            Комнаты
+                        </h6>
+                        <div class="chooseplan__roomcard-wrapper">
+                            <div class="chooseplan-room">
+                                <div class="chooseplan-room__name">
+                                    Гостиная
+                                </div>
+                                <button class="chooseplan-room__delete"></button>
+                                <div class="chooseplan-room__input">
+                                    <input type="text" placeholder="Площадь комнаты">
+                                    <span>
+                                        кв. м.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chooseplan-room">
+                                <div class="chooseplan-room__name">
+                                    Гостиная
+                                </div>
+                                <button class="chooseplan-room__delete"></button>
+                                <div class="chooseplan-room__input">
+                                    <input type="text" placeholder="Площадь комнаты" value="26,5">
+                                    <span>
+                                        кв. м.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chooseplan-room">
+                                <div class="chooseplan-room__name">
+                                    Гостиная
+                                </div>
+                                <button class="chooseplan-room__delete"></button>
+                                <div class="chooseplan-room__input">
+                                    <input type="text" placeholder="Площадь комнаты">
+                                    <span>
+                                        кв. м.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chooseplan-room">
+                                <div class="chooseplan-room__name">
+                                    Гостиная
+                                </div>
+                                <button class="chooseplan-room__delete"></button>
+                                <div class="chooseplan-room__input">
+                                    <input type="text" placeholder="Площадь комнаты">
+                                    <span>
+                                        кв. м.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chooseplan-room">
+                                <div class="chooseplan-room__name">
+                                    Гостиная
+                                </div>
+                                <button class="chooseplan-room__delete"></button>
+                                <div class="chooseplan-room__input">
+                                    <input type="text" placeholder="Площадь комнаты" value="26,5">
+                                    <span>
+                                        кв. м.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chooseplan-room">
+                                <div class="chooseplan-room__name">
+                                    Гостиная
+                                </div>
+                                <button class="chooseplan-room__delete"></button>
+                                <div class="chooseplan-room__input">
+                                    <input type="text" placeholder="Площадь комнаты">
+                                    <span>
+                                        кв. м.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chooseplan-room">
+                                <div class="chooseplan-room__name">
+                                    Гостиная
+                                </div>
+                                <button class="chooseplan-room__delete"></button>
+                                <div class="chooseplan-room__input">
+                                    <input type="text" placeholder="Площадь комнаты">
+                                    <span>
+                                        кв. м.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chooseplan-room">
+                                <div class="chooseplan-room__name">
+                                    Гостиная
+                                </div>
+                                <button class="chooseplan-room__delete"></button>
+                                <div class="chooseplan-room__input">
+                                    <input type="text" placeholder="Площадь комнаты" value="26,5">
+                                    <span>
+                                        кв. м.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chooseplan-room">
+                                <div class="chooseplan-room__name">
+                                    Гостиная
+                                </div>
+                                <button class="chooseplan-room__delete"></button>
+                                <div class="chooseplan-room__input">
+                                    <input type="text" placeholder="Площадь комнаты">
+                                    <span>
+                                        кв. м.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chooseplan-room">
+                                <div class="chooseplan-room__name">
+                                    Гостиная
+                                </div>
+                                <button class="chooseplan-room__delete"></button>
+                                <div class="chooseplan-room__input">
+                                    <input type="text" placeholder="Площадь комнаты">
+                                    <span>
+                                        кв. м.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chooseplan-room">
+                                <div class="chooseplan-room__name">
+                                    Гостиная
+                                </div>
+                                <button class="chooseplan-room__delete"></button>
+                                <div class="chooseplan-room__input">
+                                    <input type="text" placeholder="Площадь комнаты" value="26,5">
+                                    <span>
+                                        кв. м.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chooseplan-room">
+                                <div class="chooseplan-room__name">
+                                    Гостиная
+                                </div>
+                                <button class="chooseplan-room__delete"></button>
+                                <div class="chooseplan-room__input">
+                                    <input type="text" placeholder="Площадь комнаты">
+                                    <span>
+                                        кв. м.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chooseplan__roomcard-btns">
+                            <a href="#" class="chooseplan__add-room button button2">
+                                Добавить комнату
+                            </a>
+                            <a href="" class="button button1">
+                                Далее
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--#include virtual="/templates/_footer.html" -->
+    </div>
+</body>
+
+</html>
