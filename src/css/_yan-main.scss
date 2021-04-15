@@ -788,9 +788,11 @@
         display: flex;
         margin-left: -24px;
     }
-&__show{
-    margin-left: 24px;
-}
+
+    &__show {
+        margin-left: 24px;
+    }
+
     &__vars {
         margin-top: 24px;
         margin-left: -16px;
@@ -807,24 +809,114 @@
     }
 
     &__aside {
-        
+
         height: 44px;
         margin-left: 24px;
     }
-&__aside-nav{
-    display: flex;
-}
+
+    &__aside-nav {
+        display: flex;
+    }
+
     &__aside-title {
         font-weight: 600;
         font-size: 24px;
         line-height: 33px;
-       
+
     }
 
     &__btn {
-    margin-left: 118px;
+        margin-left: 118px;
         font-weight: 600;
         font-size: 16px;
         line-height: 16px;
+    }
+}
+
+.onbording {
+    .steps {
+        margin-top: 48px;
+    }
+
+    .wpp {
+        position: relative;
+        padding-left: 32px;
+
+        &::before {
+            content: '';
+            background-image: url(../images/stack/sprite.svg#wpp-on);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .steps__inner {
+        max-width: 100%;
+        justify-content: center;
+    }
+  .button.button1{
+            background: $blue;
+            border-radius: 4px;
+        }
+    &__btn {
+        margin: 40px auto;
+        height: 70px;
+        max-width: 333px !important;
+        width: 100%;
+      
+    }
+
+    &__subtitle,
+    &__title {
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin-bottom: 24px;
+    }
+
+    &__title {
+        margin-top: 64px;
+    }
+
+    &__profile {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 870px;
+        width: 100%;
+        margin: 0 auto;
+
+        &-title {
+            font-size: 16px;
+            color: $gray;
+            line-height: 24px;
+            margin-bottom: 4px;
+
+        }
+
+        &-subtitle {
+            font-size: 18px;
+            line-height: 27px;
+            color: $mgr;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 24px;
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 400;
+        color: $gray;
+
+        span {
+            color: $mgr;
+        }
     }
 }
