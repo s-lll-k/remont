@@ -86,6 +86,15 @@
 }
 
 @media(max-width:1116px) {
+    .chek__price {
+        font-size: 24px;
+        margin-right: 20px;
+    }
+
+    .chek__back {
+        margin-right: 20px;
+    }
+
     .breadcrumbs {
         margin-top: 32px;
 
@@ -154,6 +163,14 @@
 }
 
 @media(max-width:1024px) {
+    .chek__card {
+        width: calc(50% - 32px);
+    }
+
+    .chek__card-select {
+        max-width: 420px !important;
+    }
+
     .how__logo {
         margin-right: 16px;
     }
@@ -250,6 +267,12 @@
 }
 
 @media(max-width:927px) {
+
+    .chek__price,
+    .chek__back {
+        margin-right: 10px;
+    }
+
     .materials__item {
         margin-right: 32px;
     }
@@ -262,9 +285,28 @@
 }
 
 @media(max-width:779px) {
+    .chek__price {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
     .condition__text {
         font-size: 18px;
     }
+
+    .chek__btn {
+        margin-top: 20px;
+    }
+
+    .chek__filter {
+        margin-top: 20px;
+    }
+
+    .chek__top {
+        flex-wrap: wrap;
+    }
+
+
 
     .showroomin__video-title {
         white-space: nowrap;
@@ -296,6 +338,22 @@
 }
 
 @media(max-width:768px) {
+    .chek__card {
+        width: calc(100%);
+
+        .chek__image {
+            width: 100%;
+        }
+    }
+
+    .chek__card-title {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .chek__card-select {
+        max-width: 740px !important;
+    }
 
     ._textin {
         font-size: 16px !important;
@@ -388,6 +446,18 @@
 }
 
 @media(max-width:425px) {
+
+    .chek__back,
+    .chek__title,
+    .chek__price {
+        margin-top: 10px;
+    }
+
+    .chek__top {
+        flex-direction: column;
+        align-items: start;
+    }
+
     .materials__item {
         margin-right: 20px;
     }
