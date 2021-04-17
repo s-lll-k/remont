@@ -2099,4 +2099,140 @@
     }
 }
 
+.orderstatus{
+    background-color: #FFFFFF;
+    box-shadow: 0px 24px 24px rgba(19, 116, 207, 0.05);
+    border-radius: 16px;
+    padding: 24px;
+    padding-bottom: 36px;
+    &__links{
+        overflow-x: auto;
+        padding-bottom: 24px;
+        border-bottom: 1px solid #E3E3E3;
+        margin-bottom: 24px;
+        ul{
+            display: flex;
+            width: max-content;
+            li{
+                & + li{
+                    margin-left: 40px;
+                }
+                &._active{
+                    a{
+                        color: $blue;
+                    }
+                }
+                a{
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+    &__info{
+        display: flex;
+        margin-bottom: 64px;
+        &-image{
+            max-width: 407px;
+            width: 100%;
+            height: 361px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 4px;
+            }
+        }
+        &-box{
+            min-width: 400px;
+            width: 100%;
+            margin-left: 32px;
+        }
+    }
+    &__steps{
+        &-row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+        &-title{
+            font-size: 24px;
+            line-height: 36px;
+        }
+        .steps__inner{
+            max-width: 100%;
+        }
+    }
+}
+
+.question{
+    display: flex;
+    margin-top: 64px;
+    &__image{
+        max-width: 156px;
+        width: 100%;
+        height: 156px;
+        margin-right: 32px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    }
+    &__wrapper{
+        padding-top: 7px;
+    }
+    &__box{
+        display: flex;
+        margin-bottom: 32px;
+    }
+    &__col{
+        flex-grow: 1;
+        & + &{
+            margin-left: 20px;
+        }    
+        &-title{
+            font-size: 16px;
+            line-height: 24px;
+            color: #757575;
+            margin-bottom: 4px;
+        }
+        &-name{
+            color: #404040;
+            line-height: 32px;
+            &._tel{
+                padding-left: 36px;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 32px;
+                    height: 32px;
+                    left: 0;
+                    top: 0;
+                    background-image: url(../images/stack/sprite.svg#whatsapp);
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+        }
+    }
+    &__row{
+        display: flex;
+    }
+    &__text{
+        font-size: 16px;
+        line-height: 24px;
+        color: #757575;
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        height: 52px;
+        margin-right: 16px;
+    }
+}
+
 @import "media";
