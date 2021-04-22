@@ -1314,8 +1314,50 @@
     }
 }
 
+.myremont__bid {
+    display: flex;
+    margin-top: 16px;
+    align-items: center;
+
+    &-item {
+        margin-right: 100px;
+    }
+
+    &-title {
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 16px;
+        color: $gray;
+    }
+
+    &-subtitle {
+        font-size: 18px;
+        line-height: 18px;
+        color: $mgr;
+    }
+}
+
+.myremont__feedback {
+    margin-top: 64px;
+
+    &-text {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 16px;
+        color: $mgr;
+
+    }
+}
+
+.myremont__status {
+    margin-top: 64px;
+}
+
 .myremont__wrapper {
-   
+    .back-link {
+        margin-bottom: 24px;
+    }
+
     &-item {
         display: flex;
         align-items: center;
@@ -1326,7 +1368,39 @@
         }
     }
 
+    &-overflow {
+        overflow-x: auto;
+   
+        &::-webkit-scrollbar-thumb {
+            background: #DDDFE5;
+            border-radius: 4px;
+        }
 
+        &::-webkit-scrollbar-corner {
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+
+            border-radius: 4px;
+            background: #F6F6F9;
+            height: 6px;
+        }
+
+        &::-webkit-scrollbar {
+            height: 6px;
+            width: 195px;
+
+            border-radius: 4px;
+        }
+
+    }
+
+    &-title {
+        font-size: 24px;
+        line-height: 36px;
+        color: $mgr;
+    }
 
     &-skip>button {
         font-weight: 600;
@@ -1358,4 +1432,71 @@
     }
 
     &-btn {}
+}
+
+.myremont__table {
+    max-width: 1011px;
+    width: 100%;
+    border-spacing: 0 16px;
+
+    &-overflow {
+        overflow-x: auto;
+        max-width: 1011px;
+
+        &::-webkit-scrollbar-thumb {
+            background: #DDDFE5;
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-corner {
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+
+            border-radius: 4px;
+            background: #F6F6F9;
+            height: 6px;
+        }
+
+        &::-webkit-scrollbar {
+            height: 6px;
+            width: 195px;
+
+            border-radius: 4px;
+        }
+
+    }
+
+}
+
+._gray-status {
+    font-size: 18px;
+    line-height: 18px;
+    color: $gray;
+}
+
+._green-status {
+    font-size: 18px;
+    line-height: 18px;
+    color: $gray;
+    color: #4BB028;
+
+}
+
+.myremont__attr {
+    font-size: 18px;
+    line-height: 25px;
+    color: $gray;
+    text-align: left;
+
+    th {
+        font-weight: normal;
+        padding-bottom: 24px;
+    }
+
+    td {
+        margin-bottom: 16px;
+        font-weight: 400;
+    }
 }

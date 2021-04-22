@@ -68,6 +68,15 @@
 }
 
 @media(max-width:1170px) {
+    .myremont__bid {
+        display: flex;
+        justify-content: space-between;
+
+        &-item {
+            margin-right: 0;
+        }
+    }
+
     .header {
         &__nav {
             li {
@@ -189,6 +198,36 @@
 }
 
 @media(max-width:1024px) {
+    .myremont__table {
+        width: 1200px;
+    }
+
+    .myremont__summary-table {
+        min-width: 1200px;
+    }
+
+    .myremont__wrapper-option a {
+        font-size: 16px;
+        line-height: 16px;
+
+    }
+
+    .myremont__wrapper-option {
+     
+
+    }
+
+    .myremont__wrapper-item {}
+
+    .myremont__bid {
+        display: flex;
+        justify-content: space-between;
+
+        &-item {
+            margin-right: 0;
+        }
+    }
+
     .chek__card {
         width: calc(50% - 32px);
     }
@@ -292,11 +331,9 @@
     }
 
     .myremont__wrapper {
-        overflow-x: auto;
 
-        &-overflow {
-            min-width: 976px;
-        }
+
+     
 
         .myremont__wrapper-option {
             font-size: 18px;
@@ -312,6 +349,8 @@
 }
 
 @media(max-width:927px) {
+
+
     .draft {
         br {
             display: none;
@@ -430,10 +469,11 @@
 
 @media(max-width:600px) {
     .myremont__wrapper {
-        overflow-x: auto;
+
 
         &-overflow {
             min-width: 800px;
+
         }
     }
 
@@ -447,6 +487,27 @@
 }
 
 @media(max-width:537px) {
+    .myremont__feedback {
+        margin-top: 25px;
+    }
+
+    .myremont__bid {
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-title {
+            margin-bottom: 10px;
+        }
+
+        &-item {
+            margin-bottom: 25px;
+        }
+
+        .myremont__bid-subtitle {
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
 
     .draft__text {
         padding-right: 20px;
@@ -512,7 +573,8 @@
         height: 88px;
 
     }
-    .header__tel{
+
+    .header__tel {
         margin-right: 10px;
         font-size: 14px;
     }
