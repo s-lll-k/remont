@@ -2025,6 +2025,9 @@
             margin-top: 32px;
         }
     }
+    .back-link{
+        margin-bottom: 27px;
+    }
 }
 
 .myremont-item{
@@ -2162,6 +2165,8 @@
         }
         .steps__inner{
             max-width: 100%;
+            overflow-y: hidden;
+            overflow-x: auto;
         }
     }
 }
@@ -2232,6 +2237,272 @@
         align-items: center;
         height: 52px;
         margin-right: 16px;
+    }
+}
+
+.remonttab{
+    margin-top: 64px;
+    &__header{
+        display: flex;
+        margin-bottom: 20px;
+        li{
+            font-size: 18px;
+            line-height: 27px;
+            padding-bottom: 4px;
+            a{
+                color: #757575;
+            }
+            &._active{
+                border-bottom: 1px solid $blue;
+                a{
+                    color: $blue;
+                }
+            }
+            & + li{
+                margin-left: 40px;
+            }
+        }
+    }
+}
+.chat{
+    &__messages{ 
+        margin-right: -16px;
+        padding-right: 13px;
+        max-height: 742px;
+        overflow-y: auto;
+        &::-webkit-scrollbar-thumb {
+        background: #DDDFE5;
+        border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-corner {
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+            border-radius: 4px;
+            background: #F6F6F9;
+        }
+
+        &::-webkit-scrollbar {
+            width: 6px;
+            border-radius: 4px;
+        }
+    }
+    &-message{
+        padding-right: 120px;
+        & + &{
+            margin-top: 24px;
+        }
+        &.chat-message_my{
+            padding-right: 0px;
+            padding-left: 120px;
+            .chat-message{
+                &__wrapper{
+                    margin-left: auto;
+                    max-width: 770px;
+                    width: 100%;
+                    background: #F1F8FF;
+                }
+            }
+        }
+        &__wrapper{
+            background-color: #F9F9F9;
+            border-radius: 8px;
+            padding: 24px;
+        }
+        &__name{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 8px;
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__images{
+            margin-top: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: -16px;
+            margin-left: -16px;
+            img{
+                width: 146px;
+                height: 87px;
+                object-fit: cover;
+                border-radius: 4px;
+                margin-left: 16px;
+                margin-bottom: 16px;
+            }
+        }
+        &__date{
+            font-size: 14px;
+            line-height: 21px;
+            color: #757575;
+            margin-top: 16px;
+        }
+        &__file{
+            margin-top: 16px;
+            font-size: 16px;
+            line-height: 24px;
+            color: #757575;
+            padding-left: 32px;
+            position: relative;
+            &::before{
+                content: '';
+                width: 24px;
+                height: 24px;
+                left: 0;
+                top: 0;
+                position: absolute;
+                background-image: url(../images/stack/sprite.svg#files);
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+    &__form{
+        margin-top: 24px;
+        padding-top: 24px;
+        border-top: 1px solid #E3E3E3;
+        &-row{
+            display: flex;
+            margin-bottom: 16px;
+        }
+        &-hint{
+            margin-top: 8px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #757575;
+        }
+        textarea{
+            max-width: 680px;
+            width: 100%;
+            height: 104px;
+            resize: none;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 16px;
+            border: 1px solid rgba(64, 64, 64, 0.3);
+            border-radius: 4px;
+            margin-right: 24px;
+            &::placeholder{
+                color: #757575;
+            }
+        }
+    }
+}
+
+.report{
+    &-message{
+        .chat-message__date{
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+        & + &{
+            margin-top: 24px;
+        }
+    }
+    &__items{
+        padding-right: 15px;
+        margin-right: -13px;
+        max-height: 1082px;
+        overflow-y: auto;
+        &::-webkit-scrollbar-thumb {
+        background: #DDDFE5;
+        border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-corner {
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+            border-radius: 4px;
+            background: #F6F6F9;
+        }
+
+        &::-webkit-scrollbar {
+            width: 6px;
+            border-radius: 4px;
+        }
+    }
+    &-item{
+        display: flex;
+        justify-content: space-between;
+        & + &{
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid #E3E3E3;
+        }
+        &__inner{
+            max-width: 698px;
+            width: 100%;
+            padding-right: 11px;
+        }
+        &__name{
+            font-size: 24px;
+            line-height: 33px;
+            margin-bottom: 16px;
+        }
+        &__status{
+            font-size: 16px;
+            line-height: 22px;
+            &._green{
+                color: #4BB028;
+            }
+            &._yellow{
+                color: #F4911A;
+            }
+        }
+        &__date{
+            font-size: 16px;
+            line-height: 22px;
+            color: #757575;
+        }
+        &__col{
+            min-width: 166px;
+            width: 166px;
+            margin-right: 20px;
+        }
+    }
+    &__next{
+        margin-top: 32px;
+        background-color: #F6F6F7;
+        border-radius: 8px;
+        padding: 24px;
+        &-title{
+            font-size: 24px;
+            line-height: 33px;
+            margin-bottom: 32px;
+        }
+        .next-item{
+            display: flex;
+            & + .next-item{
+                margin-top: 56px;
+            }
+            &__col{
+                min-width: 210px;
+                width: 210px;
+                margin-right: 24px;
+            }
+            &__title{
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 25px;
+                margin-bottom: 8px;
+            }
+            &__status{
+                font-size: 16px;
+                line-height: 22px;
+                color: #757575;
+            }
+            &__text{
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
     }
 }
 

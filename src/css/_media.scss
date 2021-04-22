@@ -3,6 +3,39 @@
 
 
 @media (max-width: 1250px){
+    .report-item{
+        display: block;
+        &__col{
+            min-width: unset;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        &__name{
+            margin-bottom: 0;
+        }
+        &__status{
+            margin-left: auto;
+            margin-right: 10px;
+        }
+        &__inner{
+            max-width: 100%;
+        }
+    }
+    .orderstatus{
+        &__info{
+            display: block;
+            &-image{
+                max-width: 540px;
+            }
+            &-box{
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    }
     .showroom{
         .card1._horizontal{
             .card1__image{
@@ -353,8 +386,116 @@
         }
     }
 }
-
+@media (max-width: 900px){
+    .question{
+        &__box{
+            display: block;
+        }
+        &__col{
+            &-title{
+                margin-bottom: 0;
+            }
+            & + &{
+                margin-top: 14px;
+                margin-left: 0;
+            }
+        }
+        &__row{
+            display: block;
+        }
+        &__btn{
+            margin-bottom: 10px;
+            margin-right: 0;
+        }
+    }
+}
 @media (max-width: 768px){
+    .report{
+        &__next{
+            &-title{
+                font-size: 21px;
+                line-height: 29px;
+                margin-bottom: 24px;
+            }
+            .next-item{
+                display: block;
+                & + .next-item{
+                    margin-top: 32px;
+                }
+                &__col{
+                    min-width: unset;
+                    width: 100%;
+                    margin-bottom: 8px;
+                }
+            }
+        }   
+    }
+    .orderstatus{
+        padding: 16px;
+        padding-bottom: 20px;
+    }
+    .remonttab{
+        &__header{
+            flex-direction: column;
+            li{
+                max-width: max-content;
+                & + li{
+                    margin-left: 0;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .chat{
+        &__messages{
+            margin-right: -10px;
+        }
+        &-message{
+            padding-right: 50px;
+            &.chat-message_my{
+                padding-left: 50px;
+            }
+            &__wrapper{
+                padding: 15px;
+            }
+            &__text{
+                font-size: 14px;
+                line-height: 21px;
+            }
+            &__images{
+                img{
+                    width: 110px;
+                    height: 72px;
+                }
+            }
+            &__file{
+                font-size: 14px;
+                line-height: 21px;
+                padding-left: 27px;
+                &::before{
+                    width: 21px;
+                    height: 21px;
+                }
+            }
+        }
+    }
+    .orderstatus{
+        &__info{
+            &-box{
+                min-width: unset;
+            }
+        }
+    }
+    .question{
+        display: block;
+        &__image{
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        &__box{
+            margin-bottom: 16px;
+        }
+    }
     .myremont-item{
         display: block;
         &__image{
@@ -496,6 +637,12 @@
         font-size: 20px;
         line-height: 25px;
     }
+
+    .orderstatus{
+        &__info-image{
+            height: 185px;
+        }
+    }
     .myremont-item{
         &__wrapper{
             min-width: unset;
@@ -629,6 +776,55 @@
     }
 }
 @media (max-width: 537px){
+    .report-item{
+        &__name{
+            margin-bottom: 8px;
+        }
+        &__col{
+            display: block;
+        }
+    }
+    .file-btn{
+        font-size: 14px;
+    }
+    .orderstatus{
+        &__steps-row{
+            display: block;
+            margin-bottom: 12px;
+        }
+        .steps__inner{
+            padding-bottom: 10px;
+            .steps__line {
+                margin: 18px 22px 0;
+            }
+        }
+    }
+    .chat{
+        &__form{
+            &-row{
+                flex-direction: column;
+            }
+            textarea{
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            &-btn{
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+        &-message{
+            &__images{
+                img{
+                    width: calc(50% - 16px);
+                }
+            }
+            &__text{
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
     .chooseplan{
         &__roomcard{
             &-btns{
