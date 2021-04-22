@@ -69,21 +69,18 @@ export const buildCss = (done) => {
 		'node_modules/jquery-form-styler/dist/jquery.formstyler.css'
 	])
 		.pipe(prefixer())
-		.pipe(csso())
-		.pipe(concat('vendor.min.css'))
+		// .pipe(csso())
+		.pipe(concat('vendor.css'))
 		.pipe(gulp.dest('dist/css'))
 		.pipe(sync.stream());
 
 	gulp.src('src/css/main.scss')
 		.pipe(plumber())
-		.pipe(rename({
-			suffix: '.min'
-		}))
 		.pipe(sourcemaps.init())
 		.pipe(sass())
 		.pipe(replace('(/images/', '(../images/'))
 		.pipe(prefixer())
-		.pipe(csso())
+		// .pipe(csso())
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest('dist/css'))
 		.pipe(sync.stream());
