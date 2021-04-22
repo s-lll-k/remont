@@ -10,6 +10,14 @@
         }
     }
 
+    .myremont__wrapper-var {
+        margin-right: 40px;
+    }
+
+    .myremont__wrapper-skip>button {
+        margin-right: 20px;
+    }
+
     .block1__inner {
         flex-direction: column;
         align-items: flex-start;
@@ -68,6 +76,21 @@
         }
     }
 
+    .myremont__wrapper-option {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .myremont__wrapper-var {
+        margin-right: 10px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .myremont__wrapper-skip>button {
+        margin-right: 10px;
+    }
+
     // .how__steps-item:nth-of-type(2n) {
     //     align-self: start;
     //  .how__logo {
@@ -86,6 +109,9 @@
 }
 
 @media(max-width:1116px) {
+
+
+
     .chek__price {
         font-size: 24px;
         margin-right: 20px;
@@ -264,6 +290,25 @@
             }
         }
     }
+
+    .myremont__wrapper {
+        overflow-x: auto;
+
+        &-overflow {
+            min-width: 976px;
+        }
+
+        .myremont__wrapper-option {
+            font-size: 18px;
+            line-height: 18px;
+        }
+
+        .myremont__wrapper-var {
+            margin-right: 50px;
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
 }
 
 @media(max-width:927px) {
@@ -384,6 +429,14 @@
 }
 
 @media(max-width:600px) {
+    .myremont__wrapper {
+        overflow-x: auto;
+
+        &-overflow {
+            min-width: 800px;
+        }
+    }
+
     .card1-inner {
 
         .card1,
@@ -399,6 +452,7 @@
         padding-right: 20px;
         padding-left: 20px;
     }
+
     .condition__text {
         font-size: 16px;
     }
