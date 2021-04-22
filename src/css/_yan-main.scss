@@ -1209,25 +1209,28 @@
         padding-left: 24px;
         box-shadow: 0px 24px 24px rgba(19, 116, 207, 0.05);
         border-radius: 16px;
-  
+
 
         &::-webkit-scrollbar-thumb {
             background: #DDDFE5;
             border-radius: 4px;
         }
-        &::-webkit-scrollbar-corner{
+
+        &::-webkit-scrollbar-corner {
             border-radius: 4px;
         }
+
         &::-webkit-scrollbar-track {
 
-            border-radius: 4px; background: #F6F6F9;
+            border-radius: 4px;
+            background: #F6F6F9;
             height: 6px;
         }
 
         &::-webkit-scrollbar {
             height: 6px;
             width: 195px;
-           
+
             border-radius: 4px;
         }
 
@@ -1273,4 +1276,86 @@
             color: $mgr;
         }
     }
+}
+
+._red a {
+    color: #E42734 !important;
+    position: relative;
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -28px;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../images/stack/sprite.svg#pen);
+        width: 24px;
+        height: 24px;
+    }
+}
+
+._gray a {
+    color: $gray !important;
+    position: relative;
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -28px;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../images/stack/sprite.svg#greypen);
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.myremont__wrapper {
+   
+    &-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+
+        li {
+            text-align: left;
+        }
+    }
+
+
+
+    &-skip>button {
+        font-weight: 600;
+        font-size: 16px;
+        color: $blue;
+        line-height: 16px;
+        margin-right: 32px;
+    }
+
+    &-var {
+        margin-right: 124px;
+    }
+
+    &-share {
+        margin-right: 8px;
+    }
+
+    &-option {
+        display: block;
+        margin-right: auto;
+    }
+
+    &-option,
+    &-var {
+
+        font-size: 18px;
+        line-height: 25px;
+        color: $mgr;
+    }
+
+    &-btn {}
 }
