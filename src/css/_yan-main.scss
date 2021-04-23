@@ -929,6 +929,8 @@
 }
 
 .onbording {
+
+
     .steps {
         margin-top: 48px;
     }
@@ -1203,7 +1205,7 @@
         overflow-x: scroll;
 
         max-width: 1392px;
-        margin: 32px auto;
+        margin: 10px auto;
         min-height: 323px;
         padding-top: 24px;
         padding-left: 24px;
@@ -1239,9 +1241,10 @@
 
 
     &__table {
+        margin-bottom: 32px;
 
         &-title {
-            padding-bottom: 32px;
+            margin-top: 15px;
             color: $mgr;
             font-weight: 600;
             font-size: 24px;
@@ -1478,13 +1481,13 @@
 }
 
 .myremont__table {
-    max-width: 1011px;
+    min-width: 900px;
     width: 100%;
     border-spacing: 0 16px;
 
     &-overflow {
         overflow-x: auto;
-        max-width: 1011px;
+
 
         &::-webkit-scrollbar-thumb {
             background: #DDDFE5;
