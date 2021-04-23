@@ -175,9 +175,7 @@
     }
 
     .footer {
-        &__inner {
-            padding: 32px 16px;
-        }
+        &__inner {}
 
         &__logo {
             img {
@@ -198,8 +196,8 @@
 }
 
 @media(max-width:1024px) {
-    .myremont__table {
-        width: 1200px;
+    .chek__top {
+        margin-top: 15px;
     }
 
     .myremont__summary-table {
@@ -212,10 +210,7 @@
 
     }
 
-    .myremont__wrapper-option {
-     
-
-    }
+    .myremont__wrapper-option {}
 
     .myremont__wrapper-item {}
 
@@ -333,7 +328,7 @@
     .myremont__wrapper {
 
 
-     
+
 
         .myremont__wrapper-option {
             font-size: 18px;
@@ -427,11 +422,15 @@
 }
 
 @media(max-width:768px) {
+    .onbording__profile {
+ display: block;
+text-align: center;
+    }
+
     .draft {
         &__buttons {
             flex-direction: column;
             align-items: center;
-
         }
 
         &__download {
@@ -468,8 +467,7 @@
 }
 
 @media(max-width:600px) {
-    .myremont__wrapper {
-    }
+    .myremont__wrapper {}
 
     .card1-inner {
 
@@ -481,6 +479,12 @@
 }
 
 @media(max-width:537px) {
+
+    .onbording__subtitle {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
     .myremont__feedback {
         margin-top: 25px;
     }
