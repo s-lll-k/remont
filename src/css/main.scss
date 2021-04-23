@@ -1784,14 +1784,11 @@
         width: 100%;
         margin-right: 24px;
         &-main{
-            height: 581px;
             border-radius: 4px;
             overflow: hidden;
             img{
                 display: block;
-                height: 100%;
                 width: 100%;
-                object-fit: cover;
             }
         }
         &-nav{
@@ -2027,6 +2024,59 @@
     }
     .back-link{
         margin-bottom: 27px;
+    }
+    &__accordions{
+        &-text{
+            color: #757575;
+        }
+        &-item{
+            background-color: #F4F4F4;
+            border-radius: 8px;
+            padding: 24px 32px;
+            & + &{
+                margin-top: 32px;
+            }
+            &-link{
+                margin-top: 16px;
+            }
+            &-text{
+                color: #757575;
+            }
+            .accordion-btn{
+                width: 100%;
+                position: relative;
+                font-size: 24px;
+                line-height: 36px;
+                color: #757575;
+                text-align: left;
+                padding-right: 57px;
+                svg{
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    transition: all .3s;
+                    stroke-width: 3px;
+                    stroke: #757575;
+                }
+            }
+            .accordion-dropdown{
+                display: none;
+                padding-top: 16px;
+            }
+            &._opened{
+                .accordion-dropdown{
+                    display: block;
+                }
+                .accordion-btn{
+                    color: $blue;
+                    svg{
+                        stroke: $blue;
+                        transform: translateY(-50%) rotateX(180deg);
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -2501,6 +2551,46 @@
             &__text{
                 font-size: 16px;
                 line-height: 24px;
+            }
+        }
+    }
+}
+
+.history-table{
+    margin-top: 64px;
+    &__title{
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+    &__wrapper{
+        max-width: 100%;
+        overflow-x: auto;
+    }
+    .blue-link{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    table{
+        width: 100%;
+        min-width: 900px;
+        line-height: 25px;
+        thead{
+            color: #757575;
+        }
+        tbody{
+            tr{
+                &:first-child{
+                    td{
+                        padding-top: 24px;
+                    }
+                }
+                & + tr{
+                    td{
+                        padding-top: 16px;
+                    }
+                }
             }
         }
     }
