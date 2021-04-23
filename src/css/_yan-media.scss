@@ -432,12 +432,15 @@
         display: block;
         text-align: center;
     }
-.myremont__addres-item{
-    flex-wrap: wrap;
-    span{
-        margin-top: 15px;
+
+    .myremont__addres-item {
+        flex-wrap: wrap;
+
+        span {
+            margin-top: 15px;
+        }
     }
-}
+
     .draft {
         &__buttons {
             flex-direction: column;
@@ -601,6 +604,14 @@
     .draft__title {
         font-size: 20px;
         line-height: 18px;
+    }
+
+    .link__title {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .link__close{
+        right: 0;
     }
 
     .draft__text {
