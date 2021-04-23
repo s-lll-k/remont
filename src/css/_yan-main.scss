@@ -1546,3 +1546,117 @@
         font-weight: 400;
     }
 }
+
+._chek-status {
+    color: $mgr !important;
+}
+
+._data {
+    position: relative;
+    padding-right: -28px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -28px;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../images/stack/sprite.svg#greypen);
+        width: 24px;
+        height: 24px;
+    }
+
+}
+
+._data-sex {
+    padding-right: -28px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -28px;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../images/stack/sprite.svg#data-gen);
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.myremont__data {
+    margin-top: 24px;
+    margin-bottom: 64px;
+
+    &-btn {
+        margin-top: 40px;
+    }
+
+    &-item {
+        display: flex;
+        max-width: 430px;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 24px;
+
+        span {
+            display: block;
+            font-size: 18px;
+            line-height: 25px;
+            color: $gray;
+        }
+    }
+
+}
+
+.myremont__addres {
+    p {
+        font-size: 18px;
+        line-height: 25px;
+        color: $gray;
+        margin-top: 24px;
+    }
+
+    &-btn {
+        border: 1px solid rgba(19, 116, 207, 0.5);
+        box-sizing: border-box;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 22px;
+        color: $blue;
+        text-align: right;
+        padding: 8px 16px 8px 32px;
+        position: relative;
+margin-top: 24px;
+        &::before {
+            content: "";
+            position: absolute;
+            background-position: center;
+            background-size: cover;
+            background-image: url(../images/stack/sprite.svg#add12);
+            top: 11.5px;
+            left: 11px;
+   width: 16px;
+   height: 16px;
+
+        }
+    }
+
+    &-item {
+        font-size: 18px;
+        line-height: 25px;
+        display: flex;
+        margin-top: 24px;
+
+        span:first-child {
+            margin-right: 175px;
+        }
+
+        span {
+            display: block;
+            color: $gray;
+        }
+    }
+}

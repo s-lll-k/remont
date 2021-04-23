@@ -432,7 +432,12 @@
         display: block;
         text-align: center;
     }
-
+.myremont__addres-item{
+    flex-wrap: wrap;
+    span{
+        margin-top: 15px;
+    }
+}
     .draft {
         &__buttons {
             flex-direction: column;
