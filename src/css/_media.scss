@@ -118,6 +118,9 @@
         line-height: 45px;
     }
     .myremont{
+        &__accordions-item{
+            padding: 16px;
+        }
         &__inner{
             display: block;
         }
@@ -126,6 +129,24 @@
             width: 100%;
             min-width: unset;
             padding: 0;
+            &::-webkit-scrollbar-thumb {
+            background: #DDDFE5;
+            border-radius: 4px;
+            }
+    
+            &::-webkit-scrollbar-corner {
+                border-radius: 4px;
+            }
+    
+            &::-webkit-scrollbar-track {
+                border-radius: 4px;
+                background: #F6F6F9;
+            }
+    
+            &::-webkit-scrollbar {
+                height: 6px;
+                border-radius: 4px;
+            }
             &-list{
                 width: max-content;
                 padding: 15px;
@@ -346,16 +367,6 @@
     }
     .banners{
         &__slider{
-            &::after{
-                content: '';
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                left: 0;
-                top: 0;
-                background: linear-gradient(84.2deg, rgba(33, 52, 69, 0.7) 23.77%, rgba(33, 52, 69, 0) 81.09%);
-                border-radius: 16px;
-            }
             .slider-arrow{
                 position: absolute;
                 right: 40px;
@@ -369,13 +380,11 @@
                 }
             }
             &-item{
-                color: #FFF;
                 .title{
                     margin-bottom: 8px;
                 }
                 p{
                     max-width: 385px;
-                    color: #FFF;
                     font-size: 18px;
                     line-height: 27px;
                 }
@@ -633,6 +642,17 @@
     }
 }
 @media (max-width: 600px){
+    .banners{
+        &__slider{
+            &-item{
+                background-color: #E9ECF4;
+            }
+            &-image{
+                display: none;
+            }
+        }
+    }
+
     .b-title{
         font-size: 20px;
         line-height: 25px;
@@ -772,6 +792,7 @@
             bottom: 0;
             left: 0;
             margin-top: 0;
+            display: table !important;
         }
     }
 }
@@ -958,6 +979,16 @@
 }
 
 @media (max-width: 425px){
+    .myremont{
+        &__accordions{
+            &-item{
+                .accordion-btn{
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
     .chooseplan{
         &__form{
             &-row{
@@ -1058,21 +1089,13 @@
     .banners{
         &__slider{
             padding-bottom: 48px;
-            &::after{
-                height: calc(100% - 48px);
-            }
             &-item{
+                display: flex;
+                flex-direction: column;
                 padding: 16px;
                 .title{
-                    font-size: 18px;
-                    line-height: 25px;
-                }
-                p{
-                    font-size: 16px;
-                    line-height: 24px;
-                }
-                .button{
-                    margin-top: 0;
+                    font-size: 20px;
+                    line-height: 28px;
                 }
             }
             .slider-arrow{
