@@ -196,6 +196,12 @@
 }
 
 @media(max-width:1024px) {
+
+    .chek__scroll {
+        padding-left: 0;
+        margin-left: 15px;
+    }
+
     .chek__top {
         margin-top: 15px;
     }
@@ -423,8 +429,8 @@
 
 @media(max-width:768px) {
     .onbording__profile {
- display: block;
-text-align: center;
+        display: block;
+        text-align: center;
     }
 
     .draft {
