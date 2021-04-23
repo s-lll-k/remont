@@ -2016,6 +2016,7 @@
         }
     }
     &__wrapper{
+        min-width: 0;
         width: 100%;
         margin-left: 48px;
         .myremont-item + .myremont-item{
@@ -2564,7 +2565,6 @@
         margin-bottom: 24px;
     }
     &__wrapper{
-        max-width: 100%;
         overflow-x: auto;
     }
     .blue-link{
