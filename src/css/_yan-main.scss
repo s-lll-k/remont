@@ -1555,13 +1555,13 @@
 }
 ._data {
     position: relative;
-    padding-right: -28px;
+  
 
     &::after {
         content: "";
         position: absolute;
         top: 0;
-        right: -28px;
+       right: -5px;
         background-position: center;
         background-size: cover;
         background-image: url(../images/stack/sprite.svg#greypen);
@@ -1572,14 +1572,14 @@
 }
 
 ._data-sex {
-    padding-right: -28px;
+
     position: relative;
 
     &::after {
         content: "";
         position: absolute;
         top: 0;
-        right: -28px;
+        right: -5px;
         background-position: center;
         background-size: cover;
         background-image: url(../images/stack/sprite.svg#data-gen);
@@ -1608,6 +1608,7 @@
             font-size: 18px;
             line-height: 25px;
             color: $gray;
+            padding-right: 28px;
         }
     }
 
@@ -1656,7 +1657,9 @@
         span:first-child {
             margin-right: 175px;
         }
-
+span:last-child{
+    padding-right: 28px;
+}
         span {
             display: block;
             color: $gray;
