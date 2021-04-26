@@ -23,7 +23,18 @@
     box-shadow: 0px 8px 24px rgba(12, 75, 134, 0.07);
     border-radius: 4px;
     position: relative;
-
+    &._close{
+        svg{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        // код с  before придется потом удалить, потому что мы убираем спрайты 
+        &::before{
+            display: none;
+        }
+    }
     &::before {
         content: '';
         background-image: url(../images/stack/sprite.svg#bahandi-grid);
@@ -136,7 +147,11 @@
     ._border-bottom {
         border-bottom: 1px solid #E3E3E3;
     }
-
+    &__logo{
+        a, img{
+            display: block;
+        }
+    }
     &__inner {
         height: 123px;
         display: flex;

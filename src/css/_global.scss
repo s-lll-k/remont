@@ -323,6 +323,51 @@ svg {
         top: 0;
     }
 }
+
+.social-links{
+    display: flex;
+    li{
+        & + li{
+            margin-left: 8px;
+        }
+        a{
+            transition: all .3s;
+            background-color: #114E88;
+            width: 39px;
+            height: 39px;
+            border-radius: 50%;
+            position: relative;
+            svg{
+                display: block;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &:hover{
+            a{
+                background-color: $blue;
+            }
+        }
+        &:active{
+            a{
+                background-color: #2F9AFD;
+            }
+        }
+        &:focus{
+            a{
+                box-shadow: inset 0px 0px 0px 2px #97C7F5;
+            }
+        }
+        &._success{
+            a{
+                background-color: #4BB028;
+            }
+        }
+    }
+}
+
 .back-link{
     font-size: 16px;
     line-height: 22px;

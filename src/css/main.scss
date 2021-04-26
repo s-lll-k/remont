@@ -4,6 +4,40 @@
 
 @import "yan-main";
 
+.mobile-menu{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 16px;
+    background-color: white;
+    box-shadow: 0px 8px 24px rgba(12, 75, 134, 0.1);
+    padding: 24px 16px 32px;
+    overflow-y: auto;
+    &._active{
+        display: block;
+    }
+    &__header{
+        position: relative;
+        margin-bottom: 32px;
+        .header__logo{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__links{
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 57px;
+        li + li{
+            margin-top: 24px;
+        }
+    }
+}
+
 .button{
     display: block;
     max-width: max-content;
@@ -2611,6 +2645,26 @@
                 }
             }
         }
+    }
+}
+
+.filter-menu{
+    display: flex;
+    flex-direction: column;
+    overflow-y: unset;
+    .mobile-menu__header{
+        display: flex;
+        align-items: center;
+    }
+    &__title{
+        @include M600;
+        font-size: 16px;
+        line-height: 16px;
+        margin-left: 24px;
+    }
+    &__wrapper{
+        overflow-y: auto;
+        height: calc(100% - 72px);
     }
 }
 
