@@ -192,6 +192,30 @@
     }
 }
 
+@media(max-width:1065px) {
+    .sliderOurwork {
+        &__slider-item {
+            display: flex;
+        }
+
+        &__slider-left {}
+
+        &__slider-arrow {
+            left: 0 !important;
+            display: inline;
+            position: relative;
+        }
+    }
+
+    .slider-second {
+        &__item {
+            img {
+                height: 400px;
+            }
+        }
+    }
+}
+
 @media(max-width:1024px) {
 
     .chek__scroll {
@@ -365,6 +389,50 @@
 }
 
 @media(max-width:779px) {
+    .showroomin {
+        .info {
+            margin-top: 35px;
+        }
+    }
+
+    .materials {
+        .info {
+            margin-top: 35px;
+        }
+    }
+
+    .sliderOurwork {
+        .info {
+            margin-top: 35px;
+        }
+
+        &__slider-item {
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            justify-content: start;
+
+            img {
+                order: -1;
+            }
+        }
+
+        &__slider-left {
+            margin-top: 20px;
+            margin-right: 10px !important;
+            align-items: start;
+
+
+        }
+
+        &__slider-right {
+            margin-top: 20px;
+            margin-left: 0 !important;
+
+        }
+
+        &__slider-arrow {}
+    }
+
     .chek__price {
         font-size: 20px;
         line-height: 25px;
@@ -484,6 +552,7 @@
 
 @media(max-width:537px) {
 
+
     .onbording__subtitle {
         font-size: 20px;
         line-height: 28px;
@@ -590,9 +659,11 @@
 
 @media(max-width:425px) {
     .draft__inner {}
-    .myremont__data{
-         margin-bottom: 25px;
+
+    .myremont__data {
+        margin-bottom: 25px;
     }
+
     .myremont__data-item span {
         font-size: 16px;
         line-height: 20px;
@@ -602,11 +673,13 @@
         font-size: 16px;
         line-height: 22px;
     }
-.myremont__addres p{
-    font-size: 16px;
-    line-height: 22px;
-    margin-top: 15px;
-}
+
+    .myremont__addres p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 15px;
+    }
+
     .draft__title {
         font-size: 20px;
         line-height: 18px;

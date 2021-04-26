@@ -14,6 +14,29 @@
     color: $gray;
 }
 
+.materials__slider {
+    margin-top: 40px !important;
+
+}
+
+.slider-second {
+    margin-top: 96px;
+
+    &__item {
+        margin-bottom: 39px;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            object-position: center;
+            max-width: 966px;
+            height: 608px;
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+}
+
 .bahandi {
     margin-right: 40px;
     display: none;
@@ -23,18 +46,21 @@
     box-shadow: 0px 8px 24px rgba(12, 75, 134, 0.07);
     border-radius: 4px;
     position: relative;
-    &._close{
-        svg{
+
+    &._close {
+        svg {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
+
         // код с  before придется потом удалить, потому что мы убираем спрайты 
-        &::before{
+        &::before {
             display: none;
         }
     }
+
     &::before {
         content: '';
         background-image: url(../images/stack/sprite.svg#bahandi-grid);
@@ -46,6 +72,17 @@
         width: 24px;
         height: 24px;
     }
+}
+
+.sliderOurwork {
+    &__slider {
+        margin-top: 40px !important;
+        text-align: center;
+        position: relative;
+    }
+
+
+
 }
 
 .draft {
@@ -147,11 +184,15 @@
     ._border-bottom {
         border-bottom: 1px solid #E3E3E3;
     }
-    &__logo{
-        a, img{
+
+    &__logo {
+
+        a,
+        img {
             display: block;
         }
     }
+
     &__inner {
         height: 123px;
         display: flex;
@@ -211,7 +252,45 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: 0.3s all;
 
+        &:hover {
+            color: #1C89EF;
+            border: 2px solid #1C89EF;
+
+            svg {
+                fill: #1C89EF;
+            }
+
+        }
+
+        &:active {
+            color: #2F9AFD;
+            border: 2px solid #2F9AFD;
+
+            svg {
+                fill: #2F9AFD;
+            }
+        }
+
+        &:focus {
+            color: #1C89EF;
+            border: 2px solid #C5E2FF;
+            ;
+            svg {
+                fill: #1C89EF;
+            }
+
+            box-shadow: 0px 8px 24px rgba(12, 75, 134, 0.1);
+        }
+        &._success{
+            color: #4BB028;
+            border: 2px solid #4BB028;
+
+            svg {
+                fill: #4BB028;
+            }
+        }
         svg {
             fill: $blue;
             margin-right: 5px;
@@ -263,6 +342,23 @@
             border-radius: 50%;
             margin-right: 8px;
 
+            &:hover {
+                background-color: #1374CF;
+            }
+
+            &:active {
+                background-color: #2F9AFD;
+            }
+
+            &._success {
+                background-color: #4BB028;
+            }
+
+            &:focus {
+                background-color: #2F9AFD;
+                border: 2px solid #2D75B9;
+            }
+
             svg,
             path {
                 fill: white;
@@ -282,6 +378,25 @@
         height: 40px;
         font-size: 16px;
         line-height: 22px;
+
+        &:hover {
+            background-color: #1C89EF;
+            border-color: #1C89EF;
+        }
+
+        &:active {
+            background-color: #2F9AFD;
+            border-color: #2F9AFD;
+        }
+
+        &:focus {
+            border-color: #2D75B9;
+        }
+
+        &._success {
+            background-color: #4BB028;
+            border-color: #4BB028;
+        }
 
         svg {
             margin-right: 5px;
@@ -327,12 +442,82 @@
 }
 
 .sliderOurwork {
-    &__inner {}
-
-    &__title {}
-
     &__subtitle {
         @include M400;
+    }
+
+    &__slider-right {
+        margin-left: -25px !important;
+        left: 0 !important;
+        top: 48% !important;
+        margin-left: 0;
+    }
+
+    &__slider-left {
+        margin-right: -25px !important;
+        left: 0;
+        top: 48% !important;
+    }
+
+    &__slider-item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__slider-arrow {
+        margin: 0;
+        width: 50px;
+        height: 40px;
+        background-color: rgb(19, 116, 207);
+        position: relative;
+        border-radius: 4px;
+        transition: all .3s;
+        top: 0;
+        left: 0;
+
+        &._not-active {
+            background-color: rgb(19, 116, 207);
+
+            &:hover,
+            &:active,
+            &._success,
+            &:focus {
+                background-color: rgba(19, 116, 207, 0.5);
+            }
+        }
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &+button {
+            margin-left: 8px;
+        }
+
+        &:hover {
+            background-color: #1374CF;
+        }
+
+        &:active {
+            background-color: #2F9AFD;
+        }
+
+        &._success {
+            background-color: #4BB028;
+        }
+
+        &:focus {
+            background-color: #2F9AFD;
+            border: 2px solid #2D75B9;
+        }
+
+
+        ;
     }
 }
 
@@ -408,6 +593,8 @@
 
 
     }
+
+
 
     .card1__row {
         margin-bottom: 40px;
@@ -718,6 +905,8 @@
     &__btn {
         margin-top: 32px;
     }
+
+
 
     .banners__box {
         margin-top: 96px;
@@ -1565,18 +1754,20 @@
 ._chek-status {
     color: $mgr !important;
 }
-.myremont__summary-table{
+
+.myremont__summary-table {
     min-width: 925px;
 }
+
 ._data {
     position: relative;
-  
+
 
     &::after {
         content: "";
         position: absolute;
         top: 0;
-       right: -5px;
+        right: -5px;
         background-position: center;
         background-size: cover;
         background-image: url(../images/stack/sprite.svg#greypen);
@@ -1672,9 +1863,11 @@
         span:first-child {
             margin-right: 175px;
         }
-span:last-child{
-    padding-right: 28px;
-}
+
+        span:last-child {
+            padding-right: 28px;
+        }
+
         span {
             display: block;
             color: $gray;
