@@ -85,10 +85,7 @@
         }
     }
 
-    .myremont__wrapper-option {
-        font-size: 16px;
-        line-height: 16px;
-    }
+
 
     .myremont__wrapper-var {
         margin-right: 10px;
@@ -206,15 +203,8 @@
         margin-top: 15px;
     }
 
-    .myremont__summary-table {
-        min-width: 1200px;
-    }
 
-    .myremont__wrapper-option a {
-        font-size: 16px;
-        line-height: 16px;
 
-    }
 
     .myremont__wrapper-option {}
 
@@ -600,7 +590,23 @@
 
 @media(max-width:425px) {
     .draft__inner {}
+    .myremont__data{
+         margin-bottom: 25px;
+    }
+    .myremont__data-item span {
+        font-size: 16px;
+        line-height: 20px;
+    }
 
+    .myremont__addres-item span:last-child {
+        font-size: 16px;
+        line-height: 22px;
+    }
+.myremont__addres p{
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 15px;
+}
     .draft__title {
         font-size: 20px;
         line-height: 18px;
@@ -610,7 +616,8 @@
         font-size: 14px;
         line-height: 16px;
     }
-    .link__close{
+
+    .link__close {
         right: 0;
     }
 
