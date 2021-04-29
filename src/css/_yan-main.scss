@@ -19,8 +19,89 @@
 
 }
 
+.block2 {
+    margin-bottom: 96px;
+}
+
+.block2__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .block1__box {
+        margin-left: 0;
+        margin-right: 40px;
+    }
+
+    .block1__logo {
+        order: 2;
+    }
+}
+
+.aboutus {
+    &-box__row{
+        margin-bottom: 32px;
+    }
+    .card1 {
+        width: 548px;
+    }
+
+    .why__title,
+    .why__subtitle {
+        text-align: center;
+    }
+
+    .aboutus__subtitle {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .aboutus__subtext {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    &__block {
+        position: relative;
+        margin-top: 8px;
+        margin-bottom: 40px;
+        min-height: 328px;
+    }
+
+    &__title {
+        font-size: 40px;
+        line-height: 56px;
+        @include M600;
+        color: $mgr;
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 36px;
+        color: $gray;
+        max-width: 836px;
+        width: 100%;
+    }
+
+    &__person {
+        position: absolute;
+        top: -34px;
+        right: 87px;
+
+        img {
+            width: 288px;
+            height: 387px;
+            object-fit: cover;
+        }
+    }
+}
+
 .slider-second {
     margin-top: 96px;
+
+    button {
+        background-color: $blue !important;
+    }
 
     &__item {
         margin-bottom: 39px;
@@ -277,13 +358,15 @@
             color: #1C89EF;
             border: 2px solid #C5E2FF;
             ;
+
             svg {
                 fill: #1C89EF;
             }
 
             box-shadow: 0px 8px 24px rgba(12, 75, 134, 0.1);
         }
-        &._success{
+
+        &._success {
             color: #4BB028;
             border: 2px solid #4BB028;
 
@@ -291,6 +374,7 @@
                 fill: #4BB028;
             }
         }
+
         svg {
             fill: $blue;
             margin-right: 5px;

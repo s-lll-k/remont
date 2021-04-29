@@ -10,6 +10,23 @@
         }
     }
 
+    .aboutus {
+        .block1 {
+            br {
+                display: none;
+            }
+        }
+
+
+    }
+
+    .aboutus__text {
+        font-size: 18px;
+        line-height: 30px;
+        max-width: 600px;
+    }
+
+
     .myremont__wrapper-var {
         margin-right: 40px;
     }
@@ -18,10 +35,21 @@
         margin-right: 20px;
     }
 
+    .block2 {
+        .block1__logo {
+            order: -1;
+        }
+    }
+
     .block1__inner {
         flex-direction: column;
         align-items: flex-start;
 
+    }
+
+    .block2__inner {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .block1__logo {
@@ -116,7 +144,15 @@
 
 @media(max-width:1116px) {
 
+    .aboutus__subtitle {
+        font-size: 24px !important;
+        line-height: 24px !important;
+    }
 
+    .aboutus__subtext {
+        font-size: 18px !important;
+        line-height: 27px !important;
+    }
 
     .chek__price {
         font-size: 24px;
@@ -193,6 +229,10 @@
 }
 
 @media(max-width:1065px) {
+    .aboutus__text {
+        max-width: 500px;
+    }
+
     .sliderOurwork {
         &__slider-item {
             display: flex;
@@ -217,6 +257,21 @@
 }
 
 @media(max-width:1024px) {
+    .aboutus .card1 {
+        max-width: 400px;
+    }
+    .aboutus__block {
+        margin-bottom: 20px;
+        min-height: 100%;
+    }
+
+    .aboutus__text {
+        max-width: 100%;
+    }
+
+    .aboutus__person {
+        display: none;
+    }
 
     .chek__scroll {
         padding-left: 0;
