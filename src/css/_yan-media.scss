@@ -20,6 +20,18 @@
 
     }
 
+    .block2 {
+        .aboutus__subtext {
+            margin-right: 0;
+
+            br {
+                display: none
+            }
+
+            ;
+        }
+    }
+
     .aboutus__text {
         font-size: 18px;
         line-height: 30px;
@@ -260,10 +272,12 @@
     .aboutus .card1 {
         max-width: 400px;
     }
+
     .aboutus__block {
         margin-bottom: 20px;
         min-height: 100%;
     }
+
 
     .aboutus__text {
         max-width: 100%;
@@ -606,7 +620,93 @@
 }
 
 @media(max-width:537px) {
+    .steps-1 {
+        .steps__line {
+            display: none;
+        }
 
+        ._active {
+            display: block !important;
+        }
+
+        .line-1 {
+            display: block !important;
+        }
+
+        .step-2 {
+            display: block !important;
+        }
+
+        .steps__item {
+            display: none;
+        }
+    }
+
+    .steps-2 {
+        .steps__line {
+            display: none;
+        }
+
+        ._active {
+            display: block !important;
+        }
+
+        .line-2 {
+            display: block !important;
+        }
+
+        .step-3 {
+            display: block !important;
+        }
+
+        .steps__item {
+            display: none;
+        }
+    }
+
+    .steps-3 {
+        .steps__line {
+            display: none;
+        }
+
+        ._active {
+            display: block !important;
+        }
+
+        .line-3 {
+            display: block !important;
+        }
+
+        .step-4 {
+            display: block !important;
+        }
+
+        .steps__item {
+            display: none;
+        }
+    }
+
+    .steps-4 {
+        .steps__line {
+            display: none;
+        }
+
+        ._active {
+            display: block !important;
+        }
+
+        .line-3 {
+            display: block !important;
+        }
+
+        .step-3 {
+            display: block !important;
+        }
+
+        .steps__item {
+            display: none;
+        }
+    }
 
     .onbording__subtitle {
         font-size: 20px;
