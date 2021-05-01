@@ -456,7 +456,7 @@
                 line-height: 21px;
             }
             &__images{
-                img{
+                a{
                     width: 110px;
                     height: 72px;
                 }
@@ -820,7 +820,7 @@
         }
         &-message{
             &__images{
-                img{
+                a{
                     width: calc(50% - 16px);
                 }
             }
